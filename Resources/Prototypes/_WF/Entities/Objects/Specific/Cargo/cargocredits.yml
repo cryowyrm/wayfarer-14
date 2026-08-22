@@ -29,3 +29,11 @@
   components:
   - type: Stack
     count: 1
+
+- type: entity
+  parent: WayfarerMerchantToken
+  id: WayfarerMerchantToken500
+  suffix: 500 MT
+  components:
+  - type: Stack
+    count: 500
