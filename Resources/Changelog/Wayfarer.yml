@@ -6182,3 +6182,17 @@ Entries:
   id: 7205
   time: '2026-08-22T17:50:30.0000000+00:00'
   url: https://github.com/project-wayfarer/wayfarer-14/pull/1472
+- author: Cat-With-A-Computer
+  changes:
+    - type: Tweak
+      message: CGP IAA has budget access now, and a budget computer in their room.
+  id: 7206
+  time: '2026-08-23T17:03:23.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/1451
+- author: Goodfaun
+  changes:
+    - type: Tweak
+      message: Cargotokens, Telecrystals, Zekke credit, Data chit can fit in wallet now
+  id: 7207
+  time: '2026-08-23T17:29:38.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/1463
