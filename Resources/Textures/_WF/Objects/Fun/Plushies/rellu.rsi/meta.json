@@ -1,0 +1,27 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-4.0",
+    "copyright": "The original sprite used for this was provided by zuma0050 for use as a base.",
+    "additionalcopyright": "SgaeylPlushie edits made by cryowyrm on Github and Discord for Wayfarer-14",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "RelluPlushie"
+        },
+        {
+            "name": "equipped-HELMET",
+            "directions": 4
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        }
+    ]
+}

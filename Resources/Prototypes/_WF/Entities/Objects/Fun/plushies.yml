@@ -14,3 +14,173 @@
     sprite: _WF/Objects/Fun/Plushies/lizard.rsi
     slots:
     - HEAD
+
+- type: entity
+  parent: PlushieSlime
+  id: EllgarpPlushie
+  name: cogni plushie
+  description: Smells faintly of cognizine. Little pink and crimson feathers float inside of it.
+  components:
+  - type: Sprite
+    sprite: _WF/Objects/Fun/Plushies/ellgarp.rsi
+    state: EllgarpPlushie
+  - type: Item
+    sprite: _WF/Objects/Fun/Plushies/ellgarp.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _WF/Objects/Fun/Plushies/ellgarp.rsi
+    slots:
+    - HEAD
+
+    - type: entity
+  parent: BasePlushie
+  id: MauvePlushie
+  name: sparklevulp plushie
+  description: Seems to be covered in glitter and always smiling! You feel like you should run "fixrotations" and delete your invalids.
+  -type: Sprite
+  sprite: _WF/Objects/Fun/Plushies/maeshmallow.rsi
+  state: MauvePlushie
+  -type: Item
+  sprite: _WF/Objects/Fun/Plushies/maeshmallow.rsi
+  -type: Clothing
+  quickEquip: false
+  sprite: _WF/Objects/Fun/Plushies/maeshmallow.rsi
+  slots:
+    - HEAD
+
+    - type: entity
+  parent: PlushieNuke
+  id: MilesPlushie
+  name: clown plushie
+  description: A friendly looking whiteface clown. You think you have seen this guy on TV. Made by Honk Co.
+  components:
+  - type: Sprite
+    sprite: _WF/Objects/Fun/Plushies/miles.rsi
+    state: MilesPlushie
+  - type: Item
+    sprite: _WF/Objects/Fun/Plushies/miles.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _WF/Objects/Fun/Plushies/miles.rsi
+    slots:
+    - HEAD
+
+    - type: entity
+  parent: [BaseItem, BaseStash]
+  id: RelluPlushie
+  name: operative avali plush
+  description: He probably lied in completing his training.
+  components:
+  - type: Sprite
+    sprite: _WF/Objects/Fun/Plushies/rellu.rsi
+    state: RelluPlushie
+  - type: Item
+    sprite: _WF/Objects/Fun/Plushies/rellu.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _WF/Objects/Fun/Plushies/rellu.rsi
+    - type: EmitSoundOnUse
+    sound: &PlushieAvaliSound
+      path: /Audio/_Starlight/Voice/Resomi/resomi_squawk_1.ogg
+  - type: EmitSoundOnLand
+    sound: *PlushieAvaliSound
+  - type: EmitSoundOnActivate
+    sound: *PlushieAvaliSound
+  - type: EmitSoundOnTrigger
+    sound: *PlushieAvaliSound
+  - type: EmitSoundOnCollide
+    sound: *PlushieAvaliSound
+  - type: MeleeWeapon
+    soundHit: *PlushieAvaliSound
+  - type: Edible
+    useSound: *PlushieAvaliSound
+    slots:
+    - HEAD
+
+    - type: entity
+  parent: PlushieExperiment
+  id: RoyAsterPlushie
+  name: four earred coffeelick
+  description: A chocolate and tan Gallian that smells like dark chocolate and coffee. It squishes strangely, like it's not actually made out of polyfill but something more... malleable.
+  components:
+  - type: Sprite
+    sprite: _WF/Objects/Fun/Plushies/royaster.rsi
+    state: RoyAsterPlushie
+  - type: Item
+    sprite: _WF/Objects/Fun/Plushies/royaster.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _WF/Objects/Fun/Plushies/royaster.rsi
+    slots:
+    - HEAD
+
+    - type: entity
+  parent: BasePlushieVulp
+  id: SmoothPlushie
+  name: suspicious samoyed
+  description: Some weird dog... why is it wet?
+  components:
+  - type: Sprite
+    sprite: _WF/Objects/Fun/Plushies/smooth.rsi
+    state: SmoothPlushie
+  - type: Item
+    sprite: _WF/Objects/Fun/Plushies/smooth.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _WF/Objects/Fun/Plushies/smooth.rsi
+    slots:
+    - HEAD
+
+    - type: entity
+  parent: PlushieLizard
+  id: TahrilPlushie
+  name: kobold plushie
+  description: A plushie that appears smaller than the average lizard, but no less welcoming. Feels strangely fluffy.
+  components:
+  - type: Sprite
+    sprite: _WF/Objects/Fun/Plushies/tahril.rsi
+    state: TahrilPlushie
+  - type: Item
+    sprite: _WF/Objects/Fun/Plushies/tahril.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _WF/Objects/Fun/Plushies/tahril.rsi
+    slots:
+    - HEAD
+
+    - type: entity
+  parent: PlushieVox
+  id: XiriPlushie
+  name: haruspex plushie
+  description: This plushie is fraying around the edges, but seems well loved.
+  components:
+  - type: Sprite
+    sprite: _WF/Objects/Fun/Plushies/xiri.rsi
+    state: XiriPlushie
+  - type: Item
+    sprite: _WF/Objects/Fun/Plushies/xiri.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _WF/Objects/Fun/Plushies/xiri.rsi
+  - type: EmitSoundOnUse
+    sound:
+      path: Resources/Audio/_Impstation/Voice/Vox/voxchitter1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: Resources/Audio/_Impstation/Voice/Vox/voxchitter1.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: Resources/Audio/_Impstation/Voice/Vox/voxchitter1.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: Resources/Audio/_Impstation/Voice/Vox/voxchitter1.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: Resources/Audio/_Impstation/Voice/Vox/voxchitter1.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: Resources/Audio/_Impstation/Voice/Vox/voxchitter1.ogg
+  - type: Edible
+    useSound: Resources/Audio/_Impstation/Voice/Vox/voxchitter1.ogg
+    slots:
+    - HEAD
