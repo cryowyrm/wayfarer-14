@@ -10,6 +10,8 @@
   # Beakers and Vials
   - BluespaceBeaker
   - VialBluespace
+  # NVGs
+  - WFClothingEyesNVGs
 
 - type: latheRecipePack
   id: WFBlueprintsService

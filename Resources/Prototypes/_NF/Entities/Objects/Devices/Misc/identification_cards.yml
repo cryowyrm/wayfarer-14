@@ -34,7 +34,7 @@
   name: station traffic controller ID card
   components:
   - type: PresetIdCard
-    job: StationTrafficController
+    job: StationRepresentative # Wayfarer: StationTrafficController<StationRepresentative
   - type: Sprite
     sprite: _NF/Objects/Misc/id_cards.rsi
     layers:
@@ -289,7 +289,8 @@
 - type: entity
   parent: IDCardStandard
   id: PlantTechnicianIDCard
-  name: plant technician ID card
+  # Wayfarer: plant technician<shipwright
+  name: shipwright ID card
   components:
   - type: PresetIdCard
     job: PlantTechnician
@@ -304,7 +305,8 @@
 - type: entity
   parent: [IDCardStandard, BaseCommandContraband]
   id: PlantManagerIDCard
-  name: plant manager ID card
+  # Wayfarer: plant manager<project manager
+  name: project manager ID card
   components:
   - type: PresetIdCard
     job: PlantManager

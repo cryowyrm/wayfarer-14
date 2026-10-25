@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-4.0",
+  "copyright": "Created by Feathernights on Discord for Wayfarer",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "iris",
+      "directions": 4
+    },
+    {
+      "name": "iris-glow",
+      "directions": 4
+    }
+  ]
+}

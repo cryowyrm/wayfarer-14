@@ -1577,6 +1577,7 @@
   - WFBeachBall
   - WFCrayonBox
   - WFSoapNT
+  - WFDiceBag
   - ContractorClothingHeadHatHairflower
   - PlushieLizard
   - PlushieVox # SKREEEEEEEEEEEE!
@@ -1586,6 +1587,7 @@
   - WFPlushieSharkBlue
   - WFPlushieSharkPink
   - WFHarmonicaInstrument
+  - WFOcarinaInstrument
   - WFSaxophoneInstrument
   - WFAcousticGuitarInstrument
   - WFPonderingOrb
@@ -1705,9 +1707,10 @@
   id: WFEncryptionKey
   name: loadout-group-contractor-encryption-key
   minLimit: 0
-  maxLimit: 7
+  maxLimit: 8 # Wayfarer: 7<8
   loadouts:
   - WFEncryptionKeyTraffic
+  - WFEncryptionKeyGreeting
   - WFEncryptionKeyMedical
   - WFEncryptionKeyCargo
   - WFEncryptionKeyEngineering

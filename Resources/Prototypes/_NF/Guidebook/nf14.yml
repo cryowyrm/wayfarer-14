@@ -77,12 +77,15 @@
   text: "/ServerInfo/_NF/Guidebook/Shipyard.xml"
   priority: 7
   children:
-  - CivShipyard
+  - ShipyardCivilian
   - ShipyardStaff
   - ShipyardMedical
   - ShipyardExpedition
-  - ShipyardNFSD
+  #- ShipyardNFSD # Wayfarer
   - ShipyardScrap
+  - ShipyardCGP # Wayfarer
+  - OutlawShipyard # Wayfarer
+  #- ColdlightShipyard # Wayfarer
 
 # Hiring children
 - type: guideEntry

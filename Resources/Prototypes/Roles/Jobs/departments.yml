@@ -81,7 +81,7 @@
   - StationRepresentative # Frontier
   - Sheriff # Frontier
   - PlantManager # Frontier
-  - StationTrafficController # Frontier
+  # - StationTrafficController # Frontier # Wayfarer: STC is Kill
   primary: false
   weight: 100
   editorHidden: true # Frontier

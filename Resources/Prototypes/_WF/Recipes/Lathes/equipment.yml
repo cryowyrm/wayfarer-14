@@ -1,0 +1,9 @@
+- type: latheRecipe
+  id: WFClothingEyesNVGs
+  result: WFClothingEyesNVGs
+  completetime: 1
+  materials:
+    Steel: 400
+    Plastic: 1200
+    Gold: 300
+    Glass: 500

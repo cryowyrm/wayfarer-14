@@ -1,0 +1,91 @@
+# Carpade Base
+
+- type: reagent
+  id: Carpade
+  name: reagent-name-carpade
+  parent: BaseDrink
+  desc: reagent-desc-carpade
+  physicalDesc: reagent-physical-desc-citric
+  flavor: sweet
+  color: "#75ec13d9"
+  recognizable: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        conditions:
+        - !type:OrganType
+          type: Feroxi
+          shouldHave: false
+        - !type:OrganType
+          type: Plant
+          shouldHave: false
+        factor: 6
+      - !type:SatiateThirst
+        conditions:
+        - !type:OrganType
+          type: Feroxi
+        - !type:OrganType
+          type: Plant
+        factor: 2
+  plantMetabolism:
+  - !type:PlantAdjustWater
+    amount: -0.5
+
+- type: reagent
+  id: CarpadeBlue
+  name: reagent-name-carpadeblue
+  parent: Carpade
+  desc: reagent-desc-carpadeblue
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: sweet
+  color: "#1392ecd9"
+  recognizable: true
+
+- type: reagent
+  id: CarpadeRed
+  name: reagent-name-carpadered
+  parent: Carpade
+  desc: reagent-desc-carpadered
+  physicalDesc: reagent-physical-desc-fruity
+  flavor: sweet
+  color: "#d41111d9"
+  recognizable: true
+
+- type: reagent
+  id: Carpowine
+  name: reagent-name-carpowine
+  parent: Carpade
+  desc: reagent-desc-carpowine
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: optimizedalcohol
+  color: "#4a2673"
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/wineglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  recognizable: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        conditions:
+        - !type:OrganType
+          type: Feroxi
+          shouldHave: false
+        - !type:OrganType
+          type: Plant
+          shouldHave: false
+        factor: 4
+      - !type:SatiateThirst
+        conditions:
+        - !type:OrganType
+          type: Feroxi
+        - !type:OrganType
+          type: Plant
+        factor: 3
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.04

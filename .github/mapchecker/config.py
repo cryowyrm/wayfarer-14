@@ -52,6 +52,8 @@ CONDITIONALLY_ILLEGAL_MATCHES = {
         "ShuttleGun",
     ],
     "Sr": [
+        "ShuttleGunMailLauncher", #Wayfarer - for mail ships like Delivery
+        "AirlockSecurity", #Wayfarer - to get delivery through. Might want to keep for Guard Ships?
     ],
     "Centcomm": [
         # the exclusion for the Centcomm folder Doesn't seem to work for some reason?

@@ -3,18 +3,27 @@
   name: guide-entry-shipyard-scrap
   text: "/ServerInfo/_NF/Guidebook/ShipyardScrap.xml"
   children:
+  - ShipyardConstruct
+  - ShipyardGeode
   - ShipyardRusty
+  - ShipyardTide
+
+  # Wayfarer Ships
+  - ShipyardMephit
+  - ShipyardIcarus
+  - ShipyardRatrod
+  - ShipyardZipper
 
 - type: guideEntry
   id: ShipyardConstruct
   name: guide-entry-shipyard-construct
   text: "/ServerInfo/_NF/Guidebook/Shipyard/Construct.xml"
-  
+
 - type: guideEntry
   id: ShipyardGeode
   name: guide-entry-shipyard-geode
   text: "/ServerInfo/_NF/Guidebook/Shipyard/Geode.xml"
-  
+
 - type: guideEntry
   id: ShipyardRusty
   name: guide-entry-shipyard-rusty

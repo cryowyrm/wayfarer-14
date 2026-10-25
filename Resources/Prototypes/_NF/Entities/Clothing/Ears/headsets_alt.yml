@@ -93,7 +93,8 @@
 - type: entity
   parent: [ClothingHeadsetAlt, BaseCommandContraband]
   id: ClothingHeadsetAltEngineeringPlantManager
-  name: plant manager's over-ear headset
+  # Wayfarer: plant manager<project manager
+  name: project manager's over-ear headset
   components:
   - type: ContainerFill
     containers:

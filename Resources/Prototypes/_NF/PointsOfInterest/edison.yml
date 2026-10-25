@@ -8,42 +8,43 @@
 
 # Notes:
 #
-- type: pointOfInterest
-  id: Edison
-  parent: BasePOI
-  name: 'Edison Power Plant'
-  minimumDistance: 3650
-  maximumDistance: 5400
-  minimumClearance: 1000
-  spawnGroup: Required
-  gridPath: /Maps/_NF/POI/edison.yml
-  addComponents:
-  - type: IFF
-    color: "#3737F8"
-  - type: SolarPoweredGrid
-    trackOnInit: true
-    doNotCull: true
-
-- type: gameMap
-  id: Edison
-  mapName: 'Edison Power Plant'
-  mapPath: /Maps/_NF/POI/edison.yml
-  minPlayers: 0
-  stations:
-    Edison:
-      stationProto: RecordsMarketFrontierOutpost # Wayfarer RecordsFrontierOutpost<RecordsMarketFrontierOutpost
-      gridComponents:
-      - type: VesselInfo # WF
-        description: "The problems seemed impossible. But we were engineers, and engineers can do damn near anything." # NASA engineer quote
-      components:
-        - type: StationNameSetup
-          mapNameTemplate: 'Edison Power Plant'
-        - type: ExtraStationInformation
-          iconPath: /Textures/_NF/Interface/StationIcons/banner_engineering.png
-          stationSubtext: frontier-lobby-edison-subtext
-          stationDescription: frontier-lobby-edison-description
-          lobbySortOrder: 5
-        - type: StationJobs
-          availableJobs:
-            PlantManager: [ 1, 1 ]
-            PlantTechnician: [ 2, 4 ]
+#- type: pointOfInterest
+#  id: Edison
+#  parent: BasePOI
+#  name: 'Edison Power Plant'
+#  minimumDistance: 3650
+#  maximumDistance: 5400
+#  minimumClearance: 1000
+#  spawnGroup: Required
+#  gridPath: /Maps/_NF/POI/edison.yml
+#  addComponents:
+#  - type: IFF
+#    color: "#3737F8"
+#  - type: SolarPoweredGrid
+#    trackOnInit: true
+#    doNotCull: true
+#
+#- type: gameMap
+#  id: Edison
+#  mapName: 'Edison Power Plant'
+#  mapPath: /Maps/_NF/POI/edison.yml
+#  minPlayers: 0
+#  stations:
+#    Edison:
+#      stationProto: RecordsMarketFrontierOutpost # Wayfarer RecordsFrontierOutpost<RecordsMarketFrontierOutpost
+#      gridComponents:
+#      - type: VesselInfo # WF
+#        description: "The problems seemed impossible. But we were engineers, and engineers can do damn near anything." # NASA engineer quote
+#      components:
+#        - type: StationNameSetup
+#          mapNameTemplate: 'Edison Power Plant'
+#        - type: ExtraStationInformation
+#          iconPath: /Textures/_NF/Interface/StationIcons/banner_engineering.png
+#          stationSubtext: frontier-lobby-edison-subtext
+#          stationDescription: frontier-lobby-edison-description
+#          lobbySortOrder: 5
+#        - type: StationJobs
+#          availableJobs:
+#            PlantManager: [ 1, 1 ]
+#            PlantTechnician: [ 2, 4 ]
+#

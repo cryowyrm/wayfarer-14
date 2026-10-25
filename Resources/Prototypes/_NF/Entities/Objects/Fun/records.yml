@@ -60,6 +60,9 @@
     - PTMinute
     - retrofunky
     - FlipFlap
+    # Wayfarer
+    - WehFlap
+    # End Wayfarer
 
 - type: entity
   parent: BaseRecord
@@ -148,9 +151,9 @@
     vendPrice: 10000 # in case it ends up in a vending machine, somehow
 
 - type: entity
-  parent: [ BaseRecord, BaseC3SyndicateContraband ]
+  parent: [ BaseRecord ] # Wayfarer: Remove contraband
   id: SyndieRecord
-  name: blood-red record
+  name: bloody record # Wayfarer: blood-red<bloody
   description: For storing analogue data, everyone knows that circles are unparalleled. This one smells metallic.
   components:
   - type: Sprite
@@ -229,6 +232,9 @@
     - PTMinute
     - retrofunky
     - FlipFlap
+    # Wayfarer
+    - WehFlap
+    # End Wayfarer
     #Punk
     - skubstep
     - ADiffReal

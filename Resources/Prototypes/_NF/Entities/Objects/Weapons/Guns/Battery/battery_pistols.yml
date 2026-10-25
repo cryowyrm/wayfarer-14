@@ -15,7 +15,7 @@
     fireRate: 2
   - type: HitscanBatteryAmmoProvider
     proto: WFHitscanPistolLaser
-    fireCost: 60
+    fireCost: 120 # Wayfarer: 60<120 3 shots with a small cell. 6 - Medium. 9 - High. 15 - Hyper. 10 - (Charging) Ancient. 6 (C) - Micro
   - type: Battery
     maxCharge: 20
     startingCharge: 20
@@ -33,7 +33,7 @@
           - PowerCell
           - PowerCellSmall
   - type: StaticPrice
-    price: 2500
+    price: 1500 # Wayfarer: 2500>1500
     vendPrice: 2500
   # End Wayfarer
   - type: Sprite

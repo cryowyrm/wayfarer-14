@@ -45,6 +45,12 @@
   - type: Edible
     trash:
     - FoodPacketBoritosTrash
+  # Wayfarer: Ingestion tweaks
+  - type: Tag
+    tags:
+    - FoodSnack
+    - Vegetable
+  # End Wayfarer
 
 - type: entity
   name: C&Ds
@@ -62,6 +68,12 @@
   - type: Edible
     trash:
     - FoodPacketCnDsTrash
+  # Wayfarer: Ingestion tweaks
+  - type: Tag
+    tags:
+    - FoodSnack
+    - Fruit
+  # End Wayfarer
 
 - type: entity
   name: cheesie honkers
@@ -99,6 +111,12 @@
   - type: Edible
     trash:
     - FoodPacketChipsTrash
+  # Wayfarer: Ingestion tweaks
+  - type: Tag
+    tags:
+    - FoodSnack
+    - Vegetable
+  # End Wayfarer
 
 - type: entity
   parent: BaseItem
@@ -143,6 +161,7 @@
     tags:
       - FoodSnack
       - ReptilianFood
+      - Fruit
   - type: SolutionContainerManager
     solutions:
       food:
@@ -190,6 +209,12 @@
   - type: Item
     heldPrefix: energybar-open
     storedOffset: 0,-2
+  # Wayfarer: Ingestion tweaks
+  - type: Tag
+    tags:
+    - FoodSnack
+    - Vegetable
+  # End Wayfarer
 
 - type: entity
   parent: FoodSnackBase
@@ -232,6 +257,12 @@
   - type: Edible
     trash:
     - FoodPacketPopcornTrash
+  # Wayfarer: Ingestion tweaks
+  - type: Tag
+    tags:
+    - FoodSnack
+    - Vegetable
+  # End Wayfarer
 
 - type: entity
   name: 4no raisins
@@ -292,10 +323,10 @@
     - Meat
 
 - type: entity
-  name: syndi-cakes
+  name: coldcakes # Wayfarer: changed name
   parent: FoodSnackBase
   id: FoodSnackSyndi
-  description: An extremely moist snack cake that tastes just as good after being nuked.
+  description: A cold, extremely moist snack cake that tastes like winter. # Wayfarer: changed description
   components:
   - type: FlavorProfile
     flavors:
@@ -335,6 +366,12 @@
   - type: Item
     heldPrefix: ramen
     storedOffset: 0,-1
+  # Wayfarer: Ingestion tweaks
+  - type: Tag
+    tags:
+    - FoodSnack
+    - Vegetable
+  # End Wayfarer
 
 - type: entity
   parent: DrinkRamen
@@ -803,7 +840,7 @@
   categories: [ HideSpawnMenu ]
   parent: FoodPacketTrash
   id: FoodPacketSyndiTrash
-  name: syndi-cakes box
+  name: coldcakes box # Wayfarer: changed name
   components:
   - type: Sprite
     state: syndicakes-trash

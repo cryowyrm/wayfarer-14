@@ -1,0 +1,22 @@
+# Values shared by every outlaw objective. The reward is per objective and is set in Prototypes/_WF/OutlawObjectives/objectives.yml
+
+- type: sectorService
+  id: WFOutlawObjectives
+  components:
+  - type: OutlawObjectiveSettings
+    stackDC: Doubloon
+    stackSpesos: Credit
+    rewardSound: /Audio/Effects/teleport_arrival.ogg
+    gibPayoutRange: 30
+    activationIntervalMin: 1h
+    activationIntervalMax: 2h
+    checkInterval: 5m
+    shipSaleConsoles:
+    - BlackMarket
+    deedForgeTime: 20s
+    forgedDeed: WFForgedShipDeed
+    shipDamageFraction: 0.1 # 10% of a ship's walls, machines, etc.
+    itemSlot: back
+    outlawRoles:
+      components:
+      - NFPirateRole

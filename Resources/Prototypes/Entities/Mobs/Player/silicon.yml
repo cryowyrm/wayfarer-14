@@ -366,7 +366,7 @@
     containers:
       borg_brain:
       - PositronicBrain
-      # Wayfarer
+       # Wayfarer
       key_slots:
       - EncryptionKeyCommon
       - EncryptionKeyBinary

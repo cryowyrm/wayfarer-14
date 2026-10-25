@@ -1976,3 +1976,16 @@
   - NFMassExcavation
   - NFImprovedSalvageWeapons
   position: 4, 39
+
+- type: technology
+  id: WFNightvision
+  name: wf-research-technology-nightvision
+  entityIcon: WFClothingEyesNVGs
+  discipline: NFScience
+  tier: 1
+  cost: 15000
+  recipeUnlocks:
+  - WFClothingEyesNVGs
+  technologyPrerequisites:
+  - NFSuperParts
+  position: 2, 7

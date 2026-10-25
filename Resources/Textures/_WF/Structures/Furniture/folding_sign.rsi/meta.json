@@ -1,0 +1,175 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-4.0",
+    "copyright": "Original artwork sprited by @RoyAster for Wayfarer 14, with various stamps sprited by Goodfaun",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "folding",
+			"directions": 4
+        },
+        {
+            "name": "folding_folded"
+        },
+        {
+            "name": "inhand-left",
+			"directions": 4
+        },
+        {
+            "name": "inhand-right",
+			"directions": 4
+        },
+        {
+            "name": "writing",
+			"directions": 4
+        },
+        {
+            "name": "signature",
+			"directions": 4
+        },
+        {
+            "name": "stamp",
+			"directions": 4
+        },
+        {
+            "name": "writing_folded"
+        },
+        {
+            "name": "signature_folded"
+        },
+        {
+            "name": "stamp_folded"
+        },
+        {
+            "name": "paper_stamp-cap",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-ce",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-centcom",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-chaplain",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-lawyer",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-clown",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-cmo",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-deny",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-detective",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-hop",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-hos",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-ok",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-mime",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-qm",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-rd",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-syndicate",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-trader",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-warden",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-generic",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-greytide",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-psychologist",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-wizard",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-nf-bailiff",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-nf-doctor",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-nf-engineer",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-nf-pal",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-nf-pirate",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-nf-plant-manager",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-nf-psychologist",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-nf-sheriff",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-nf-signature",
+            "directions": 4
+        },
+        {
+            "name": "paper_stamp-nf-stc",
+            "directions": 4
+        }
+    ]
+}

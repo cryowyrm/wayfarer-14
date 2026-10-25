@@ -443,6 +443,13 @@
     back:
     - AcousticGuitarInstrument
 
+- type: loadout
+  id: WFDiceBag
+  price: 500
+  storage:
+    back:
+    - DiceBag
+
 #T2
 - type: loadout
   id: WFPonderingOrb

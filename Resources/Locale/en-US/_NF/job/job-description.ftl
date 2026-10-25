@@ -22,8 +22,8 @@ job-description-nf-pirate-first-mate =
     You've found yourself on the wrong side of the law, though your exploits aren't totally known to the authorities. Make a name for yourself or keep lying low. The choice is yours. 
     
     Note: This is a softer antag version of wanted outlaw. You are not immediately wanted by the GCP and it will be easier to hide in plain sight.
-job-description-plant-manager = Generate ludicrous amounts of power to use or sell, keep the sector's stations in functional order.
-job-description-plant-technician = Assist the plant manager in operating power plant machinery, perform crucial off-site repairs.
+job-description-plant-manager = Teach Wayfarers how to build shuttles, approve the construction of Big Dumb Objects, and be prepared to sacrifice yourself to stop a meltdown.
+job-description-plant-technician = Ply your trade in the shipyard and beyond, ensure all constructions are up to code, and fix up stations when they break.
 job-description-prisoner = Sit in prison. Gamble with your cellmates. Talk to the bailiff. Write your memoirs.
 job-description-public-affairs-liaison = Interface with the public, hand out and fill out forms and assist the NFSD chain of command with administrative tasks.
 job-description-security-guard = Patrol the empty halls, whistle simple tunes you heard on radio, jingle your keychain and scurry away at the sight of danger.

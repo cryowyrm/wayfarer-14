@@ -22,7 +22,7 @@
       - Sheriff
 #      - SecurityGuard
       - StationRepresentative
-      - StationTrafficController
+#      - StationTrafficController # Wayfarer: STC is Kill
 
 - type: entity
   parent: BasePacifiedZone

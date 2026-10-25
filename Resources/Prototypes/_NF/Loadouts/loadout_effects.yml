@@ -54,7 +54,7 @@
   effects:
   - !type:RoleBlacklistLoadoutEffect
     blacklist:
-    - JobStationTrafficController
+#    - JobStationTrafficController # Wayfarer: STC is Kill
     - JobDirectorOfCare
 
 - type: loadoutEffectGroup

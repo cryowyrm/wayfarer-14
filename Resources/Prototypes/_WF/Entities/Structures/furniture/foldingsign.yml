@@ -1,0 +1,128 @@
+﻿- type: entity
+  id: SignFolding
+  name: folding sign
+  description: A nice little coffee shop sign to write today's specials or something on. The legs are locked open to stand upright.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _WF/Structures/Furniture/folding_sign.rsi
+    layers:
+    - state: folding
+    - state: writing
+      map: ["enum.PaperVisualLayers.Writing"]
+      visible: false
+    - state: stamp
+      map: ["enum.PaperVisualLayers.Stamp"]
+      visible: false
+  - type: Item
+    size: Huge
+  - type: Appearance
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: Construction
+    graph: SignFoldingGraph
+    node: SignFolding
+  - type: DamageExaminable
+  - type: Physics
+    bodyType: Static
+    fixedRotation: true
+  - type: Anchorable
+  - type: Pullable
+  - type: Fixtures
+    fixtures:
+      sign:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        density: 55
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+        hard: true
+  - type: SpriteFade
+  - type: Clickable
+  - type: InteractionOutline
+  - type: MovedByPressure
+  - type: Paper
+  - type: PaperLabelType
+  - type: ActivatableUI
+    key: enum.PaperUiKey.Key
+    requiresComplex: false
+  - type: UserInterface
+    interfaces:
+      enum.PaperUiKey.Key:
+        type: PaperBoundUserInterface
+  - type: PaperVisuals
+
+- type: entity
+  id: SignFolded
+  name: folded sign
+  description: A nice little coffee shop sign to write today's specials or something on. The legs folded up for ease of transport.
+  components:
+  - type: Item
+    size: Huge
+  - type: Appearance
+  - type: DamageExaminable
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: Sprite
+    sprite: _WF/Structures/Furniture/folding_sign.rsi
+    layers:
+    - state: folding_folded
+  - type: Tag
+    tags:
+    - FoldedSign
+  - type: Fixtures
+    fixtures:
+      item:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 20
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+        hard: false
+  - type: Physics
+    bodyType: Dynamic
+    fixedRotation: true
+  - type: Pullable
+  - type: Construction
+    graph: SignFoldingGraph
+    node: SignFolded
+  - type: SpriteFade
+  - type: Clickable
+  - type: InteractionOutline
+  - type: MovedByPressure
+
+- type: construction
+  id: SignFolding
+  graph: SignFoldingGraph
+  startNode: start
+  targetNode: SignFolding
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+
+#- type: construction
+#  id: SignFolded
+#  graph: SignFoldingGraph
+#  startNode: start
+#  targetNode: SignFolded
+#  category: construction-category-furniture
+#  objectType: Item

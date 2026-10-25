@@ -1,0 +1,23 @@
+﻿- type: entity
+  parent: MetalBarrelYellow
+  id: ChemicalBarrelJuiceBanana
+  suffix: Banana Juice
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: JuiceBanana
+          Quantity: 1000
+  - type: ContainerFill
+    containers:
+      paper_label:
+      - LabelJuiceBanana
+
+- type: entity
+  id: LabelJuiceBanana
+  parent: Paper
+  categories: [HideSpawnMenu]
+  components:
+  - type: Paper
+    content: reagent-label-juice-Banana

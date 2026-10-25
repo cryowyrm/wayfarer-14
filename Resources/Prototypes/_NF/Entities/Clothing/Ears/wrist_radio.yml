@@ -78,7 +78,8 @@
 - type: entity
   parent: [NFBaseClothingWristset, BaseCommandContraband]
   id: NFClothingWristsetPlantManager
-  name: plant manager wristset
+  # Wayfarer: plant manager<project manager
+  name: project manager wristset
   components:
   - type: Sprite
     layers:

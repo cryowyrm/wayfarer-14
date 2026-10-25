@@ -109,7 +109,8 @@
     state: stamp-bailiff
 
 - type: entity
-  name: plant manager's rubber stamp
+  # Wayfarer: plant manager<project manager
+  name: project manager's rubber stamp
   parent: [RubberStampBase, BaseCommandContraband]
   id: RubberStampPlantManager
   categories: [ DoNotMap ]

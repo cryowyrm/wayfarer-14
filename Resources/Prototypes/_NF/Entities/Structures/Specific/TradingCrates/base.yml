@@ -133,3 +133,8 @@
   - type: AdditionalPalletCurrency
     currency: Telecrystal
     prob: 0.134
+# Start Wayfarer
+  - type: WFBonusCurrency
+    currency: WayfarerMerchantToken
+    amount: 0
+# End Wayfarer

@@ -1,0 +1,227 @@
+# Halloween Gift Bags
+- type: entity
+  id: TreatBagBase
+  name: trick or treat bag
+  description: A little goodie bag known for its wondrous surprises. Feeling lucky?
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _WF/Objects/Decoration/goodiebag.rsi
+    layers:
+    - state: goodiebag
+
+- type: entity
+  id: TreatBag
+  parent: [TreatBagBase, BaseStorageItem]
+  suffix: Empty
+  components:
+  - type: Item
+    size: Normal
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,2,2
+
+
+- type: entity
+  id: GoodieBagTrash
+  categories: [ HideSpawnMenu ]
+  parent: BaseItem
+  name: wrapping paper
+  description: Carefully wrapped and tied with a ribbon. Then ceremoniously ripped apart and tossed on the floor.
+  components:
+  - type: Sprite
+    sprite: _WF/Objects/Decoration/goodiebag.rsi
+    layers:
+    - state: unwrapped
+  - type: Tag
+    tags:
+    - Trash
+  - type: SpaceGarbage
+
+# Halloween Gift Bags: Gambling Edition
+
+- type: entity
+  id: TreatBagRandom
+  parent: [TreatBagBase, BaseItem]
+  suffix: Random
+  components:
+  - type: SpawnItemsOnUse
+    items:
+      - id: GoodieBagTrash
+      # They can have one as a treat still
+      - id: CandyMystery
+      # Candy
+      - id: WFCandyBundleGood
+        prob: .6
+        orGroup: GiftPool
+      - id: WFCandyBundleBad
+        prob: .4
+        orGroup: GiftPool
+      # Costumes
+      - id: WFGoodieBundleNurse
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundleWitch
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundlePilot
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundleCardborg
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundleBunny
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundleMaid
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundleDuchess
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundleShrineMaiden
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundleTrooper
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundleParade
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundlePlagueDoc
+        prob: .3
+        orGroup: GiftPool
+      - id: ClothingOuterGhostSheet
+        prob: .3
+        orGroup: GiftPool
+      - id: ClothingUniformJumpsuitAncient
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundleRichard
+        prob: .2
+        orGroup: GiftPool
+      # Rare Costumes
+      - id: WFGoodieBundleCultist
+        prob: .1
+        orGroup: GiftPool
+      - id: WFGoodieBundleCultJani
+        prob: .1
+        orGroup: GiftPool
+      - id: ClothingOuterHardsuitLing
+        prob: .1
+        orGroup: GiftPool
+      # Tricks
+      - id: AdminInstantEffectSmoke3
+        prob: .3
+        orGroup: GiftPool
+      - id: AdminInstantEffectEMP
+        prob: .3
+        orGroup: GiftPool
+      - id: AdminInstantEffectMetalFoam
+        prob: .2
+        orGroup: GiftPool
+      - id: AdminInstantEffectFlash
+        prob: .2
+        orGroup: GiftPool
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  id: TreatBagRandomTrick
+  parent: [TreatBagBase, BaseItem]
+  suffix: Tricks Only
+  components:
+  - type: SpawnItemsOnUse
+    items:
+      - id: GoodieBagTrash
+      # They can have one as a treat still
+      - id: CandyMystery
+      # Tricks
+      - id: AdminInstantEffectSmoke3
+        prob: .3
+        orGroup: GiftPool
+      - id: AdminInstantEffectEMP
+        prob: .3
+        orGroup: GiftPool
+      - id: AdminInstantEffectMetalFoam
+        prob: .2
+        orGroup: GiftPool
+      - id: AdminInstantEffectFlash
+        prob: .2
+        orGroup: GiftPool
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  id: TreatBagRandomTreat
+  parent: [TreatBagBase, BaseItem]
+  suffix: Treats Only
+  components:
+  - type: SpawnItemsOnUse
+    items:
+      - id: GoodieBagTrash
+      # They can have one as a treat still
+      - id: CandyMystery
+      # Candy
+      - id: WFCandyBundleGood
+        prob: .6
+        orGroup: GiftPool
+      - id: WFCandyBundleBad
+        prob: .4
+        orGroup: GiftPool
+      # Costumes
+      - id: WFGoodieBundleNurse
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundleWitch
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundlePilot
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundleCardborg
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundleBunny
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundleMaid
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundleDuchess
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundleShrineMaiden
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundleTrooper
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundleParade
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundlePlagueDoc
+        prob: .3
+        orGroup: GiftPool
+      - id: ClothingOuterGhostSheet
+        prob: .3
+        orGroup: GiftPool
+      - id: ClothingUniformJumpsuitAncient
+        prob: .3
+        orGroup: GiftPool
+      - id: WFGoodieBundleRichard
+        prob: .2
+        orGroup: GiftPool
+      # Rare Costumes
+      - id: WFGoodieBundleCultist
+        prob: .1
+        orGroup: GiftPool
+      - id: WFGoodieBundleCultJani
+        prob: .1
+        orGroup: GiftPool
+      - id: ClothingOuterHardsuitLing
+        prob: .1
+        orGroup: GiftPool
+    sound:
+      path: /Audio/Effects/unwrap.ogg

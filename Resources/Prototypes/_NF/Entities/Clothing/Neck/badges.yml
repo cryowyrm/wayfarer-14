@@ -15,7 +15,8 @@
 # Wayfarer Start
   - type: Tag
     tags:
-    - WhitelistWallet
+    - FitsWallet
+  - type: PinnableBadge
 # end Wayfarer
 
 - type: entity

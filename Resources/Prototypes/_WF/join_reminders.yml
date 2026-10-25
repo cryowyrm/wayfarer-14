@@ -1,0 +1,11 @@
+﻿- type: joinReminder
+  id: CgpWantedList
+  message: join-reminder-cgp-wanted-list
+  jobs:
+  - Bailiff
+  - Brigmedic
+  - Cadet
+  - Deputy
+  - NFDetective
+  - SeniorOfficer
+  - Sheriff

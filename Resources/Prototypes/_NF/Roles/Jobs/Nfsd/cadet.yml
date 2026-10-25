@@ -18,6 +18,12 @@
   - !type:GiveItemOnHolidaySpecial
     holiday: FrontierBirthday
     prototype: FrontierBirthdayGift
+  # Wayfarer: Spooky month!
+  - !type:GiveItemOnHolidaySpecial
+    holiday: Halloween
+    prototype: TreatBagRandomTreat
+  # End Wayfarer
+
 
 - type: startingGear
   id: CadetGear

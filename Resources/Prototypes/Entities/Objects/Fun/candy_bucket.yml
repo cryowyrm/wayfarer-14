@@ -9,8 +9,8 @@
     layers:
     - state: empty_icon
       map: [ "enum.ToggleableVisuals.Layer" ]
-  - type: ContainerHeld
-    threshold: 1
+#  - type: ContainerHeld # Wayfarer: TODO: Find out why this breaks when you use the StorageFill comp
+#    threshold: 1
   - type: Item
     heldPrefix: empty
     size: Normal

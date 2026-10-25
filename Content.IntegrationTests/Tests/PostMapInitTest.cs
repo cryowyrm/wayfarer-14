@@ -65,6 +65,9 @@ namespace Content.IntegrationTests.Tests
             "/Maps/_NF/Shuttles/Nfsd/rogue.yml", // Contains EXP-320g "Friendship"
             "/Maps/_NF/Admin/ninthcircle.yml", // Contains Intercom (all encryption keys)
             // End Frontier
+            // Wayfarer: Staff ships
+            "/Maps/_WF/Shuttles/Staff/delivery.yml", // Contains FWD-6500m "Priority"
+            // End Wayfarer
         };
 
         private static readonly string[] GameMaps = FrontierConstants.GameMapPrototypes; // Frontier: not inline constants

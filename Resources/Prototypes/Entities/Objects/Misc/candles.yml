@@ -296,6 +296,9 @@
   suffix: Decorative
   id: CandleInfinite
   components:
+  - type: Tag # wayfarer
+    tags: # wayfarer
+    - CandleInfinite # wayfarer
   - type: Sprite
     noRot: true
     sprite: Objects/Misc/candles.rsi

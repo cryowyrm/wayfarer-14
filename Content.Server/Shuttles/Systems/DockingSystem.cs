@@ -496,7 +496,6 @@ namespace Content.Server.Shuttles.Systems
                 Undock(dock);
                 undockedAny = true;
             }
-
             if (!undockedAny)
             {
                 _popup.PopupCursor(Loc.GetString("shuttle-console-undock-fail"));

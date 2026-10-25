@@ -324,7 +324,7 @@
 - type: holiday
   id: Halloween
   name: holiday-name-halloween
-  beginDay: 27 # Frontier: 31<27
+  beginDay: 11 # Frontier: 31<27 # Wayfarer 27<11
   beginMonth: October
   endDay: 2 # Frontier
   endMonth: November # Frontier

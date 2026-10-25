@@ -25,7 +25,7 @@
 - type: entity
   parent: ClothingBackpackDuffelSyndicateMedicalBundle
   id: ClothingBackpackDuffelSyndicateFilledMedical
-  name: syndicate surgical duffel bag
+  name: spinel surgical duffel bag # Wayfarer: Syndicate<Spinel
   description: A large duffel bag containing a full suite of surgical tools.
   components:
   - type: StorageFill
@@ -163,7 +163,7 @@
 - type: entity
   parent: ClothingBackpackDuffelClown
   id: ClothingBackpackDuffelSyndicateCostumeClown
-  suffix: syndicate
+  suffix: Operative
   components:
   - type: Tag
     tags: [] # ignore "WhitelistChameleon" tag
@@ -191,8 +191,8 @@
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicatePyjamaBundle
-  name: syndicate pyjama duffel bag
-  description: Contains 3 pairs of syndicate pyjamas and 4 plushies for the ultimate sleepover.
+  name: spinel pyjama duffel bag # Wayfarer: Syndicate<spinel
+  description: Contains 3 pairs of spinel pyjamas and 4 plushies for the ultimate sleepover. # Wayfarer: Syndicate<spinel
   components:
   - type: Storage
     grid:
@@ -217,7 +217,7 @@
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicateC4tBundle
-  name: syndicate C-4 bundle
+  name: composition C-4 bundle # Wayfarer: Syndicate<Composition
   description: "Contains a lot of C-4 charges."
   components:
     - type: StorageFill
@@ -247,8 +247,8 @@
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicateEVABundle
-  name: syndicate EVA bundle
-  description: "Contains the Syndicate approved EVA suit."
+  name: spinel EVA bundle
+  description: "Contains the spinel-colored EVA suit." # Wayfarer: Syndicate approved<spinel-colored
   components:
   - type: StorageFill
     contents:
@@ -262,8 +262,9 @@
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicateHardsuitBundle
-  name: syndicate hardsuit bundle
-  description: "Contains the Syndicate's signature blood red hardsuit."
+  name: spinel hardsuit bundle # Wayfarer: Changed name
+  description: "Contains a spinel hardsuit."
+  # Wayfarer: Changed Description
   components:
   - type: StorageFill
     contents:
@@ -276,8 +277,9 @@
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicateEliteHardsuitBundle
-  name: syndicate elite hardsuit bundle
-  description: "Contains the Syndicate's elite hardsuit, which comes with some more stuff in it."
+  name: old ops bundle # Wayfarer: Changed name
+  description: "Contains an old-ops environmental hardsuit."
+  # Wayfarer: Changed Description
   components:
   - type: StorageFill
     contents:
@@ -290,7 +292,7 @@
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicateHardsuitExtrasBundle
-  name: syndicate hardsuit extras bundle
+  name: spinel hardsuit extras bundle #Wayfarer: Syndicate<spinel
   description: "Contains stuff that you will absolutely want to have when purchasing a hardsuit."
   components:
   - type: StorageFill
@@ -303,7 +305,7 @@
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelZombieBundle
-  name: syndicate zombie bundle
+  name: outbreak bundle #Wayfarer: Syndicate zombie<Outbreak
   description: "An all-in-one kit for unleashing the undead upon a station."
   components:
   - type: StorageFill

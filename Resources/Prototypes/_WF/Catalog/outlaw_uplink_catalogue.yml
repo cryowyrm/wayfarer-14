@@ -509,21 +509,21 @@
   - UplinkOutlawUtility
 
 # Techfab
-- type: listing
-  id: UplinkOutlawTechfab
-  name: uplink-outlaw-techfab-name
-  description: uplink-outlaw-techfab-desc
-  productEntity: OutlawTechfabFlatpack
-  icon: { sprite: _NF/Objects/Devices/flatpack.rsi, state: pirate_lathe }
-  cost:
-    Doubloon: 8
-  categories:
-  - UplinkOutlawUtility
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - OutlawUplinkBase
+# - type: listing
+#   id: UplinkOutlawTechfab
+#   name: uplink-outlaw-techfab-name
+#   description: uplink-outlaw-techfab-desc
+#   productEntity: OutlawTechfabFlatpack
+#  icon: { sprite: _NF/Objects/Devices/flatpack.rsi, state: pirate_lathe }
+#   cost:
+#     Doubloon: 8
+#   categories:
+#   - UplinkOutlawUtility
+#   conditions:
+#   - !type:StoreWhitelistCondition
+#     whitelist:
+#       tags:
+#       - OutlawUplinkBase
 
 # Assembler
 - type: listing
@@ -1297,7 +1297,7 @@
   productEntity: Telecrystal1
   icon: { sprite: Objects/Specific/Syndicate/telecrystal.rsi, state: telecrystal }
   cost:
-    Doubloon: 3
+    Doubloon: 2
   categories:
   - UplinkOutlawConversion
   conditions:
@@ -1314,7 +1314,7 @@
   productEntity: Telecrystal10
   icon: { sprite: Objects/Specific/Syndicate/telecrystal.rsi, state: telecrystal }
   cost:
-    Doubloon: 30
+    Doubloon: 20
   categories:
   - UplinkOutlawConversion
   conditions:

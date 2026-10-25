@@ -107,7 +107,7 @@
     variation: 0.125
   sounds:
     Scream:
-      collection: MaleScreams
+      collection: VulpkaninScreams # Wayfarer MaleScreams>VulpkaninScreams```
     Laugh:
       collection: MaleLaugh
     Sneeze:
@@ -142,6 +142,10 @@
       collection: VulpkaninHowls
     Awoo:
       collection: VulpkaninHowls
+    Gekker:
+      collection: VulpkaninGekkers # Wayfarer
+    FoxCry:
+      collection: VulpkaninCries # Wayfarer
     Gasp:
       collection: MaleGasp
     DefaultDeathgasp:
@@ -157,7 +161,7 @@
     variation: 0.125
   sounds:
     Scream:
-      collection: FemaleScreams # RodentiaScreams -> FemaleScreams - Wayfarer
+      collection: VulpkaninScreams # Wayfarer FemaleScream>VulpkaninScreams```
     Laugh:
       collection: FemaleLaugh
     Sneeze:
@@ -174,6 +178,8 @@
       collection: FemaleSigh
     Crying:
       collection: FemaleCry
+    FoxCry:
+      collection: VulpkaninCries # Wayfarer
     Whistle:
       collection: Whistles
     Weh:
@@ -192,6 +198,8 @@
       collection: VulpkaninHowls
     Awoo:
       collection: VulpkaninHowls
+    Gekker:
+      collection: VulpkaninGekkers # Wayfarer
     Gasp:
       collection: FemaleGasp
     DefaultDeathgasp:
@@ -218,6 +226,8 @@
       collection: VulpkaninHowls
     Awoo:
       collection: VulpkaninHowls
+    Gekker:
+      collection: VulpkaninGekkers # Wayfarer
 
 - type: emoteSounds
   id: MaleRodentia
@@ -228,6 +238,8 @@
       collection: RodentiaScreams # Floof
     Laugh:
       collection: MaleLaugh
+    FerretLaugh:
+      collection: FerretLaugh # Wayfarer
     Sneeze:
       collection: MaleSneezes
     Cough:
@@ -247,7 +259,7 @@
     Weh:
       collection: Weh
     Squeak:
-      path: /Audio/Animals/mouse_squeak.ogg
+      collection: RodentiaSqueak # Wayfarer       path: /Audio/Animals/mouse_squeak.ogg>collection: RodentiaSqueak```
     Gasp:
       collection: MaleGasp
     DefaultDeathgasp:
@@ -261,9 +273,11 @@
     variation: 0.125
   sounds:
     Scream:
-      path: /Audio/Animals/mouse_squeak.ogg
+      collection: RodentiaScreams # Wayfarer
     Laugh:
       collection: FemaleLaugh
+    FerretLaugh:
+      collection: FerretLaugh # Wayfarer
     Sneeze:
       collection: FemaleSneezes
     Cough:
@@ -283,7 +297,7 @@
     Weh:
       collection: Weh
     Squeak:
-      path: /Audio/Animals/mouse_squeak.ogg
+      collection: RodentiaSqueak # Wayfarer       path: /Audio/Animals/mouse_squeak.ogg>collection: RodentiaSqueak```
     Gasp:
       collection: FemaleGasp
     DefaultDeathgasp:

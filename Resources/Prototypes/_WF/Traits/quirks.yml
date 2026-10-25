@@ -55,3 +55,22 @@
     components:
     - type: MimePowers
       preventWriting: true
+    - type: MimeAbilities
+      actions:
+      - ActionMimeInvisibleBox
+      - ActionMimeFingerGun
+
+
+- type: trait
+  id: IPCBioReactorTrait
+  name: trait-ipcbioreactor-name
+  description: trait-ipcbioreactor-desc
+  category: Digestions
+  cost: 1
+  conditions:
+  - !type:IsSpeciesCondition
+    species: IPC
+  effects:
+  - !type:AddOrganEffect
+    organ: OrganIPCStomach
+    slot: stomach

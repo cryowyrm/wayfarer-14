@@ -85,5 +85,13 @@
   name: store-category-mtrestock
 
 - type: storeCategory
+  id: UplinkMerchantsBarrel
+  name: store-category-mtbarrel
+
+- type: storeCategory
+  id: UplinkMerchantsChemBarrel
+  name: store-category-mtchembarrel
+
+- type: storeCategory
   id: UplinkMerchantsTool
   name: store-category-mttool

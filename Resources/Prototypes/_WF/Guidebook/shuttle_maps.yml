@@ -275,6 +275,17 @@
 
 - type: entity
   parent: PosterBase
+  id: ShuttleMapDIRELogo
+  name: "DIRELogo"
+  description: "Detailed splash page of DIRE Industries personal shuttle."
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _WF/Guidebook/shuttle_maps/128x96.rsi
+    state: direlogo
+
+- type: entity
+  parent: PosterBase
   id: ShuttleMapDagger
   name: "Dagger"
   description: "Detailed map of a Dagger shuttle."
@@ -349,3 +360,47 @@
   - type: Sprite
     sprite: _WF/Guidebook/shuttle_maps/128x96.rsi
     state: zenith
+
+- type: entity
+  parent: PosterBase
+  id: ShuttleMapDelivery
+  name: "Delivery"
+  description: "Detailed map of a Delivery shuttle."
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _WF/Guidebook/shuttle_maps/128x96.rsi
+    state: delivery
+
+- type: entity
+  parent: PosterBase
+  id: ShuttleMapNadir
+  name: "Nadir"
+  description: "Detailed map of a Nadir shuttle."
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _WF/Guidebook/shuttle_maps/128x96.rsi
+    state: nadir
+
+- type: entity
+  parent: PosterBase
+  id: ShuttleMapHermesMkII
+  name: "Hermes MkII"
+  description: "Detailed map of a Hermes MkII shuttle."
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _WF/Guidebook/shuttle_maps/128x96.rsi
+    state: hermesmkii
+
+- type: entity
+  parent: PosterBase
+  id: ShuttleMapFinch
+  name: "Finch"
+  description: "Detailed map of a Finch shuttle."
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _WF/Guidebook/shuttle_maps/128x96.rsi
+    state: finch

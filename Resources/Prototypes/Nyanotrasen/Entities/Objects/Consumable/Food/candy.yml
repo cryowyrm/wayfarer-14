@@ -23,6 +23,11 @@
     sprite: Objects/Consumable/Food/candy.rsi
     state: lollipop
     netsync: false
+  # Wayfarer: So that it can be put in a Candy Bucket
+  - type: Tag
+    tags:
+    - FoodSnack
+  # End Wayfarer
 
 - type: entity
   parent: FoodBase
@@ -47,4 +52,9 @@
     sprite: Objects/Consumable/Food/candy.rsi
     state: gumball
     netsync: false
+  # Wayfarer: So that it can be put in a Candy Bucket
+  - type: Tag
+    tags:
+    - FoodSnack
+  # End Wayfarer
 

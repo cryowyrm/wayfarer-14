@@ -35,6 +35,11 @@
   - !type:GiveItemOnHolidaySpecial # Even pirates get a piece of cake.
     holiday: FrontierBirthday
     prototype: FrontierBirthdayGift
+  # Wayfarer: Spooky month!
+  - !type:GiveItemOnHolidaySpecial
+    holiday: Halloween
+    prototype: TreatBagRandomTreat
+  # End Wayfarer
 
 - type: chameleonOutfit
   id: NFPirateCaptainChameleonOutfit
@@ -68,6 +73,7 @@
   - WFImplanter
   - PirateBackpackItems
   - WFHandItems
+  - ContractorSupportPets
   - NFSpeciesSpecific
   - WFSidearm
   - WFLongarm

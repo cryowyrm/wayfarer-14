@@ -4,7 +4,7 @@
   parent: [BaseMob, MobDamageable, MobCombat, MobAtmosExposed, MobFlammable]
   abstract: true
   components:
-    #- type: Vore # Floofstation - Vore # Wayfarer: Actually, not sure if this will work well given how they can't eat.
+    - type: Vore # Floofstation - Vore
     - type: ModifyUndies # Floofstation
 # Wayfarer: This is needed due to the unique base
     - type: Carriable
@@ -48,6 +48,7 @@
     - type: ZombieImmune
     - type: DoAfter
     - type: RotationVisuals
+      defaultRotation: 90 # Wayfarer: add defaultRotation: 90
       horizontalRotation: 90
     - type: Examiner
     # - type: Recyclable
@@ -182,6 +183,12 @@
     #   damage:
     #     types:
     #       Blunt: 0.28 #per second, scales with pressure and other constants.
+    # Wayfarer: this is needed for implanted stomachs (like the IPC Bio-Generator) to work. 
+    - type: SolutionContainerManager
+      solutions:
+        chemicals:
+          maxVol: 25
+    #End Wayfarer
     - type: Identity
     #  soundHit:
     #    path: /Audio/Effects/metalbreak.ogg

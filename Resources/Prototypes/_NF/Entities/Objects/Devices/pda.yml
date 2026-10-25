@@ -576,7 +576,8 @@
 - type: entity
   parent: BasePDA
   id: PlantTechnicianPDA
-  name: plant technician PDA
+  # Wayfarer: plant technician<shipwright
+  name: shipwright PDA
   description: Last shift must've bent the antenna somehow.
   components:
   - type: Pda
@@ -595,7 +596,8 @@
 - type: entity
   parent: BasePDA
   id: PlantManagerPDA
-  name: plant manager PDA
+  # Wayfarer: plant manager<project manager
+  name: project manager PDA
   description: Pristine, but smells strongly of ozone.
   components:
   - type: Pda

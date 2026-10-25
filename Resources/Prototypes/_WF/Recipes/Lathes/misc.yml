@@ -1,0 +1,50 @@
+- type: latheRecipe
+  id: FolderBase
+  result: BoxFolderBaseEmpty
+  materials:
+    Plastic: 100
+
+- type: latheRecipe
+  parent: FolderBase
+  id: FolderRed
+  result: BoxFolderRedEmpty
+
+- type: latheRecipe
+  parent: FolderBase
+  id: FolderBlack
+  result: BoxFolderBlackEmpty
+
+- type: latheRecipe
+  parent: FolderBase
+  id: FolderGreen
+  result: BoxFolderGreenEmpty
+
+- type: latheRecipe
+  parent: FolderBase
+  id: FolderBlue
+  result: BoxFolderBlueEmpty
+
+- type: latheRecipe
+  parent: FolderBase
+  id: FolderGrey
+  result: BoxFolderGreyEmpty
+
+- type: latheRecipe
+  parent: FolderBase
+  id: FolderYellow
+  result: BoxFolderYellowEmpty
+
+- type: latheRecipe
+  parent: FolderBase
+  id: FolderWhite
+  result: BoxFolderWhiteEmpty
+  
+- type: latheRecipe
+  parent: FolderBase
+  id: FolderCgpBrown
+  result: BoxFolderPalBrown
+  
+- type: latheRecipe
+  parent: FolderBase
+  id: FolderCgpGreen
+  result: BoxFolderPalGreen

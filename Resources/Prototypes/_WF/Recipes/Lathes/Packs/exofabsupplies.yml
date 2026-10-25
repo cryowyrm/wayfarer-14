@@ -1,0 +1,48 @@
+- type: latheRecipePack
+  id: WFExosuitRobotechToolsStatic
+  recipes:
+     - Wirecutter
+     - Screwdriver
+     - WelderIndustrial
+     - Wrench
+     - CrowbarGreen
+     - Multitool
+     - HandLabeler
+     - ClothingMaskWeldingGas
+     - TRayScanner
+
+- type: latheRecipePack
+  id: WFExosuitRobotechPartsStatic
+  recipes:
+      - ProximitySensor
+      - Igniter
+      - Signaller
+      - PowerCellSmall
+      - PowerCellMedium
+      - PowerCageSmall
+      - CableStack
+      
+- type: latheRecipePack
+  id: WFExosuitRobotechSurgeryStatic
+  recipes:
+      - Scalpel
+      - Retractor
+      - Cautery
+      - Drill
+      - Saw
+      - Hemostat
+
+- type: latheRecipePack
+  id: WFExosuitRobotechAnalyzersStatic
+  recipes:
+      - HandheldHealthAnalyzer
+      - CraftClothingEyesHudDiagnostic
+      - CraftClothingEyesEyepatchHudDiag
+
+- type: latheRecipePack
+  id: WFExosuitRobotechStorageStatic
+  recipes:
+      - ToolboxElectricalNF
+      - ToolboxMechanicalNF
+      - ToolboxEmergencyNF
+      - UtilityBelt

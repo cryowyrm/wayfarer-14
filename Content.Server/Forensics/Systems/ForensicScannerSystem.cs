@@ -30,6 +30,7 @@ using Content.Shared.FixedPoint; // Frontier
 using Content.Shared.Stacks; // Frontier
 using Content.Shared.Radio; // Frontier
 using Robust.Shared.Configuration; // Frontier
+using Content.Server._WF.Forensics; // Wayfarer
 // todo: remove this stinky LINQy
 
 namespace Content.Server.Forensics
@@ -54,6 +55,7 @@ namespace Content.Server.Forensics
         [Dependency] private readonly SectorServiceSystem _service = default!; // Frontier
         [Dependency] private readonly IConfigurationManager _cfg = default!; // Frontier
         [Dependency] private readonly BankSystem _bank = default!; // Frontier
+        [Dependency] private readonly ScanLocationSystem _scanLocation = default!; // Wayfarer
 
         // Frontier: payout constants
         // Temporary values, sane defaults, will be overwritten by CVARs.
@@ -235,6 +237,7 @@ namespace Content.Server.Forensics
                 }
 
                 scanner.LastScannedName = MetaData(args.Args.Target.Value).EntityName;
+                _scanLocation.Record(uid, args.Args.Target.Value); // Wayfarer
             }
 
             OpenUserInterface(args.Args.User, (uid, scanner));
@@ -348,6 +351,7 @@ namespace Content.Server.Forensics
 
             var text = new StringBuilder();
 
+            text.Append(_scanLocation.GetText(uid)); // Wayfarer
             text.AppendLine(Loc.GetString("forensic-scanner-interface-fingerprints"));
             foreach (var fingerprint in component.Fingerprints)
             {
@@ -397,6 +401,7 @@ namespace Content.Server.Forensics
             component.TouchDNAs = new();
             component.SolutionDNAs = new();
             component.LastScannedName = string.Empty;
+            _scanLocation.Clear(uid); // Wayfarer
 
             UpdateUserInterface(uid, component);
         }

@@ -1,0 +1,281 @@
+# Base Goodie Bag
+
+- type: entity
+  name: goodie bag
+  parent: [ BoxBase, RecyclableItemPaper ]
+  id: WFGoodieBag
+  description: A goodie bag made for festive occasions!
+  components:
+  - type: Sprite
+    sprite: _WF/Objects/Decoration/goodiebag.rsi
+    layers:
+    - state: costumebag
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,2,2
+  - type: Storage
+    maxItemSize: Large
+    grid:
+    - 0,0,3,3
+
+- type: entity
+  name: goodie bundle
+  parent: [ WFGoodieBag, RecyclableItemPaper ]
+  id: WFGoodieBundle
+  description: A goodie bag containing a festive costume.
+  abstract: true
+
+# Halloween Costumes
+
+- type: entity
+  name: nurse costume
+  parent: [ WFGoodieBundle ]
+  id: WFGoodieBundleNurse
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingUniformJumpskirtNurse
+      - id: ClothingHeadNurseHat
+
+- type: entity
+  name: pilot costume
+  parent: [ WFGoodieBundle ]
+  id: WFGoodieBundlePilot
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingShoesBootsPilot
+    - id: ClothingUniformJumpsuitMilitaryPilot
+    - id: ClothingOuterCoatBomber
+    - id: ClothingNeckScarfPilot
+    - id: ClothingHeadHatPilot
+
+- type: entity
+  name: cardborg costume
+  parent: [ WFGoodieBundle ]
+  id: WFGoodieBundleCardborg
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterCardborg
+    - id: ClothingHeadHatCardborg
+
+- type: entity
+  name: bunny costume
+  parent: [ WFGoodieBundle ]
+  id: WFGoodieBundleBunny
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingHeadHatBunny
+    - id: CSClothesWhitebunnysuit
+
+- type: entity
+  name: maid costume
+  parent: [ WFGoodieBundle ]
+  id: WFGoodieBundleMaid
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: SLClothingUniformJumpskirtElegantMaid
+    - id: ClothingUnderSocksPlain
+    - id: ClothingHandsGlovesColorWhite
+
+- type: entity
+  name: duchess costume
+  parent: [ WFGoodieBundle ]
+  id: WFGoodieBundleDuchess
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: IMPClothingHeadHatCuteTiara
+    - id: CSClothesCorsetDress
+
+- type: entity
+  name: shrine maiden costume
+  parent: [ WFGoodieBundle ]
+  id: WFGoodieBundleShrineMaiden
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterSuitShrineMaiden
+    - id: ClothingHeadHatShrineMaidenWig
+
+- type: entity
+  name: trooper costume
+  parent: [ WFGoodieBundle ]
+  id: WFGoodieBundleTrooper
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingHeadHatSecurityTrooper
+    - id: ClothingUniformSecurityTrooper
+    - id: ClothingShoesBootsCowboyBlack
+
+- type: entity
+  name: parade sec costume
+  parent: [ WFGoodieBundle ]
+  id: WFGoodieBundleParade
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingHeadHatBeretSecurity
+    - id: ClothingUniformJumpsuitHoSParadeMale
+    - id: SLClothingUniformBootsVampir
+
+- type: entity
+  name: cultist costume
+  parent: [ WFGoodieBundle ]
+  id: WFGoodieBundleCultist
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingHeadHatHoodCulthood
+    - id: ClothingOuterRobesCult
+    - id: ClothingShoesCult
+
+- type: entity
+  name: cultist janitor costume
+  parent: [ WFGoodieBundle ]
+  id: WFGoodieBundleCultJani
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingHeadHelmetCultJanitor
+    - id: ClothingMaskCultJanitor
+    - id: ClothingOuterCoatCultJanitor
+
+- type: entity
+  name: plague doctor costume
+  parent: [ WFGoodieBundle ]
+  id: WFGoodieBundlePlagueDoc
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterPlagueSuit
+    - id: ClothingNeckMantle
+    - id: ClothingMaskPlague
+    - id: ClothingHeadHatPlaguedoctor
+
+- type: entity
+  name: 80's calling costume
+  parent: [ WFGoodieBundle ]
+  id: WFGoodieBundleRichard
+  categories: [ HideSpawnMenu ]
+  description: Do you like hurting other people? This costume is for you.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingHeadHatRichard
+    - id: ClothingOuterCoatJacketLettermanBrown
+    - id: DVClothingUniformJumpsuitJeansRed
+    - id: ClothingShoesColorBlack
+
+- type: entity
+  name: witch costume
+  parent: [ WFGoodieBundle ]
+  id: WFGoodieBundleWitch
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingHeadHatWitch1
+    - id: ClothingOuterSuitWitchRobes
+    - id: SLClothingShoesHighheelShoes
+
+- type: entity
+  name: jester costume
+  parent: [ WFGoodieBundle ]
+  id: WFGoodieBundleJester
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingHeadHatJesterAlt
+    - id: ClothingUniformJumpsuitJesterAlt
+    - id: ClothingShoesJester
+    - id: PanFluteInstrument
+
+- type: entity
+  name: evil jester costume
+  parent: [ WFGoodieBundle ]
+  id: WFGoodieBundleJesterEvil
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: IMPClothingHeadJesterEvilHat
+    - id: IMPClothingUniformJesterEvil
+    - id: PlasteelMace
+
+# Base Candy Bucket
+
+- type: entity
+  parent: [ CandyBucket ]
+  id: WFCandyBundle
+  abstract: true
+  components:
+#  - type: Tag
+#    tags: [] # ignore "WhitelistChameleon" tag
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,3,2
+    whitelist:
+      components:
+      - Pill
+      - VentriloquistPuppet
+      tags:
+      - FoodSnack
+      - Pill
+
+# Candy Bucket fillings
+
+- type: entity
+  parent: [ WFCandyBundle ]
+  id: WFCandyBundleGood
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: CandyMystery
+    - id: CandyMystery
+      prob: 0.5
+    - id: CandyMystery
+      prob: 0.5
+    - id: FoodSnackSwirlLollipop
+      prob: 0.5
+    - id: FoodPSB
+      prob: 0.5
+    - id: FoodSnackChocolate
+      prob: 0.5
+    - id: FoodLollipop
+      prob: 0.5
+    - id: FoodGumball
+      prob: 0.5
+
+- type: entity
+  parent: [ WFCandyBundle ]
+  id: WFCandyBundleBad
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: PetRock
+    - id: PetRockFred
+      prob: 0.2
+    - id: PetRockRoxie
+      prob: 0.2

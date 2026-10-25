@@ -34,13 +34,7 @@
     tags:
     - Pizza
     - ReptilianFood
-  # Wayfarer: 24h shelf life for baked goods
-  - type: Perishable
-    rotAfter: 86400
-    molsPerSecondPerUnitMass: 0
-  - type: Temperature
-    currentTemperature: 290
-  # End Wayfarer
+    - Fruit # Wayfarer
 
 - type: entity
   parent: FoodInjectableBase # Not sliceable
@@ -72,13 +66,7 @@
     - Pizza
     - ReptilianFood
     - Slice
-  # Wayfarer: 24h shelf life for baked goods
-  - type: Perishable
-    rotAfter: 86400
-    molsPerSecondPerUnitMass: 0
-  - type: Temperature
-    currentTemperature: 290
-  # End Wayfarer
+    - Fruit # Wayfarer
 
 # Pizza
 
@@ -178,6 +166,12 @@
     - state: mushroom
   - type: SliceableFood
     slice: FoodPizzaMushroomSlice
+  # Wayfarer: Ingestion tweaks
+  - type: Tag
+    tags:
+    - Vegetable
+    - Pizza
+  # End Wayfarer
 
 - type: entity
   name: slice of mushroom pizza
@@ -195,6 +189,13 @@
     - state: mushroom-slice
   - type: Item
     heldPrefix: mushroom-slice
+  # Wayfarer: Ingestion tweaks
+  - type: Tag
+    tags:
+    - Vegetable
+    - Pizza
+    - Slice
+  # End Wayfarer
 # Tastes like crust, tomato, cheese, mushroom.
 
 - type: entity
@@ -229,6 +230,13 @@
           Quantity: 5
         - ReagentId: Flavorol
           Quantity: 15
+  # Wayfarer: Ingestion tweaks
+  - type: Tag
+    tags:
+    - Vegetable
+    - Fruit
+    - Pizza
+  # End Wayfarer
 
 - type: entity
   name: slice of vegetable pizza
@@ -263,6 +271,14 @@
           Quantity: 1
         - ReagentId: Flavorol
           Quantity: 3
+  # Wayfarer: Ingestion tweaks
+  - type: Tag
+    tags:
+    - Vegetable
+    - Fruit
+    - Pizza
+    - Slice
+  # End Wayfarer
 
 # Tastes like crust, tomato, cheese, carrot.
 
@@ -289,7 +305,7 @@
           Quantity: 27
         - ReagentId: Vitamin
           Quantity: 6
-        - ReagentId: Ichor # WF - Omnizine > Ichor replacement
+        - ReagentId: Ichor # Wayfarer: Omnizine<Ichor replacement
           Quantity: 9
         - ReagentId: Flavorol
           Quantity: 15
@@ -297,6 +313,7 @@
     tags:
     - Meat
     - Pizza
+    - Fruit # Wayfarer
 
 
 - type: entity
@@ -331,6 +348,7 @@
     - Meat
     - Pizza
     - Slice
+    - Fruit # Wayfarer
 # Tastes like crust, tomato, cheese, meat, laziness.
 
 - type: entity
@@ -460,6 +478,7 @@
     tags:
     - Meat
     - Pizza
+    - Fruit # Wayfarer
 
 - type: entity
   name: slice of Hawaiian pizza
@@ -484,6 +503,7 @@
     - Meat
     - Pizza
     - Slice
+    - Fruit # Wayfarer
 # Tastes like crust, tomato, cheese, pineapple, ham.
 
 #TODO: This is a meme pizza from /tg/. It has specially coded mechanics.
@@ -516,7 +536,7 @@
           Quantity: 5
         - ReagentId: Iron
           Quantity: 10
-        - ReagentId: Ichor # WF - Omnizine > Ichor replacement
+        - ReagentId: Ichor # Wayfarer: Omnizine<Ichor replacement
           Quantity: 30
         - ReagentId: Flavorol
           Quantity: 15
@@ -524,6 +544,7 @@
     tags:
     - Meat
     - Pizza
+    - Fruit # Wayfarer
 
 - type: entity
   name: slice of Arnold's pizza
@@ -563,6 +584,7 @@
     - Meat
     - Pizza
     - Slice
+    - Fruit # Wayfarer
 # Tastes like crust, tomato, cheese, pepperoni, 9 millimeter bullets.
 
 #TODO: Make this do poison damage and make cut pizza slices eventually rot into this.
@@ -620,6 +642,8 @@
     tags:
     - Meat
     - Pizza
+    - Fruit # Wayfarer
+    - Vegetable # Wayfarer
   - type: PointLight
     enabled: true
     radius: 2
@@ -657,6 +681,8 @@
     - Meat
     - Pizza
     - Slice
+    - Fruit # Wayfarer
+    - Vegetable # Wayfarer
   - type: PointLight
     enabled: true
     radius: 2

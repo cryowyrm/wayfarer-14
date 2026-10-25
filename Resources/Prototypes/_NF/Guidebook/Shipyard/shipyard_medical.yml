@@ -2,6 +2,23 @@
   id: ShipyardMedical
   name: guide-entry-shipyard-medical
   text: "/ServerInfo/_NF/Guidebook/ShipyardMedical.xml"
+  children:
+  - ShipyardAkupara
+  - ShipyardApothecary
+  - ShipyardCaladrius
+  - ShipyardDruid
+  - ShipyardEagle
+  - ShipyardSearchlight
+  - ShipyardSpirit
+  - ShipyardStasis
+  - ShipyardTyne
+  - ShipyardVitalis
+
+  # Wayfarer Ships
+  - ShipyardFinch
+  - ShipyardHammerhead
+  - ShipyardMedivac
+  - ShipyardVelios
 
 - type: guideEntry
   id: ShipyardAkupara

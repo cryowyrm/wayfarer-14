@@ -38,6 +38,7 @@
   - WeaponCaseShortAmmo
   - WeaponCaseHeavyAmmo # Coyote
   - WeaponCaseShortExplosives
+  - WFPouchHardcase # Wayfarer
 
 - type: latheRecipePack
   id: NFMercenaryWeaponsStatic
@@ -94,6 +95,7 @@
   - NFSpeedLoaderPistol35Empty
   - NFSpeedLoaderPistol45Empty
   - MagazineAsmgtUniversalEmpty
+  - NFMagazineShotgunDrumEmptyRecipe # Wayfarer
   - NFMagazineClipRifle20Empty
 
 - type: latheRecipePack

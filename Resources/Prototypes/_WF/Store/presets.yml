@@ -40,6 +40,8 @@
     - UplinkMerchantsFun
     - UplinkMerchantsFood
     - UplinkMerchantsRestock
+    - UplinkMerchantsBarrel
+    - UplinkMerchantsChemBarrel
     - UplinkMerchantsTool
     currencyWhitelist:
     - WayfarerMerchantToken

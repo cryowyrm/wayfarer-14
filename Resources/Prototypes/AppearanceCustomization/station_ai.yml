@@ -22,6 +22,15 @@
   - StationAiHologramFace
   - StationAiHologramCat
   - StationAiHologramDog
+  - StationAiHologramAlgalone # omu, part of bugborg pr
+  - StationAiHologramFractalsnowflake
+  - StationAiHologramHensonsnode
+  - StationAiHologramLongrun
+  - StationAiHologramNtpaint
+  - StationAiHologramPuredata
+  - StationAiHologramRorschach
+  - StationAiHologramSeraphim
+  - StationAiHologramTripleaffirmative #end Omu
 
 # Iconography
 - type: stationAiCustomization

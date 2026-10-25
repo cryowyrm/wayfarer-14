@@ -18,6 +18,11 @@
   - !type:GiveItemOnHolidaySpecial
     holiday: FrontierBirthday
     prototype: FrontierBirthdayGift
+  # Wayfarer: Spooky month!
+  - !type:GiveItemOnHolidaySpecial
+    holiday: Halloween
+    prototype: TreatBagRandomTreat
+  # End Wayfarer
 
 # play time tracker
 - type: playTimeTracker
@@ -100,6 +105,7 @@
   - WFImplanter
   - WFBackpackItems
   - WFHandItems
+  - ContractorSupportPets
 #  - WFBundles # Rework at a later date
   - NFSpeciesSpecific
   - WFSidearm

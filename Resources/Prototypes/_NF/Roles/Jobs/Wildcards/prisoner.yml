@@ -22,6 +22,11 @@
   - !type:GiveItemOnHolidaySpecial # Frontier: even prisoners get a piece of cake (with no file inside).
     holiday: FrontierBirthday # Frontier
     prototype: FrontierBirthdayGift # Frontier
+  # Wayfarer: Spooky month!
+  - !type:GiveItemOnHolidaySpecial
+    holiday: Halloween
+    prototype: TreatBagRandomTreat
+  # End Wayfarer
 
 - type: startingGear
   id: PrisonerGear

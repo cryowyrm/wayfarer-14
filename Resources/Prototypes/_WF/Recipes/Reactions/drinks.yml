@@ -1,0 +1,42 @@
+# Carpade
+- type: reaction
+  id: Carpade
+  reactants:
+    Saline:
+      amount: 1
+    Sugar:
+      amount: 2
+    JuiceLime:
+      amount: 2
+  products:
+    Carpade: 5
+
+- type: reaction
+  id: CarpadeBlue
+  reactants:
+    Carpade:
+      amount: 5
+    BlueCuracao:
+      amount: 1
+  products:
+    CarpadeBlue: 6
+
+- type: reaction
+  id: CarpadeRed
+  reactants:
+    Carpade:
+      amount: 5
+    JuiceBerry:
+      amount: 1
+  products:
+    CarpadeRed: 6
+
+- type: reaction
+  id: Carpowine
+  reactants:
+    CarpadeBlue:
+      amount: 1
+    Wine:
+      amount: 1
+  products:
+    Carpowine: 2

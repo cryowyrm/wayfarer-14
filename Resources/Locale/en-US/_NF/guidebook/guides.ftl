@@ -1,7 +1,10 @@
 # Base entries
 guide-entry-nf14 = Frontier Guide
-guide-entry-bank = NT Galactic Bank
+guide-entry-bank = Galactic Bank
+guide-entry-shifts-and-persistence = Shifts and Persistence
+guide-entry-safety-deposit-box = Safety Deposit Box System
 guide-entry-piloting = Piloting
+guide-entry-autopilot = Autopilot
 guide-entry-startinggear = Starting Equipment
 guide-entry-hiring = Hiring Crew
 guide-entry-interviews = Interviews
@@ -10,7 +13,8 @@ guide-entry-sector-topology = Sector Topology
 guide-entry-cargo-hauling = Cargo Hauling
 guide-entry-shipyard = Shipyard
 guide-entry-shipyard-civilian = Civilian ships
-guide-entry-shipyard-staff = Frontier Staff ships
+# Wayfarer: Renamed to Dusk Staff
+guide-entry-shipyard-staff = Dusk Staff ships
 guide-entry-shipyard-medical = Medical ships
 guide-entry-shipyard-expedition = Expedition ships
 guide-entry-shipyard-nfsd = NFSD ships
@@ -18,6 +22,7 @@ guide-entry-shipyard-scrap = Scrap ships
 guide-entry-frontier-rules = Server Rules
 guide-entry-frontier-definitions = Definitions
 guide-entry-preflightchecklist = Preflight Checklist
+# Wayfarer: removed NT from guide-entry-bank
 
 # Engineering entries
 guide-entry-offshore-gas-mining = Offshore Gas Mining
@@ -44,7 +49,8 @@ guide-entry-expedition-explorers = Explorers
 guide-entry-expedition-mercenaries = Mercenaries
 guide-entry-expedition-gangers = Punks
 guide-entry-expedition-silicons = Rogue Silicons
-guide-entry-expedition-syndicate-naval-forces = Syndicate Naval Forces
+# Wayfarer: Syndicate<Operative
+guide-entry-expedition-syndicate-naval-forces = Operative Naval Forces
 guide-entry-expedition-xenos = Xenos
 
 # Civilian Shipyard entries

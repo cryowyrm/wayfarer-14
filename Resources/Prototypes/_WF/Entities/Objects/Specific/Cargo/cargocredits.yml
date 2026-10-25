@@ -23,7 +23,7 @@
       WayfarerMerchantToken: 1
   - type: Tag
     tags:
-    - WhitelistWallet
+    - FitsWallet
 
 - type: entity
   parent: WayfarerMerchantToken

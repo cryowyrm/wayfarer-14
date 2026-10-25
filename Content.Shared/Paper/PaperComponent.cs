@@ -80,7 +80,6 @@ public sealed partial class PaperComponent : Component
         }
     }
     // End RMC14
-
     [Serializable, NetSerializable]
     public enum PaperUiKey
     {

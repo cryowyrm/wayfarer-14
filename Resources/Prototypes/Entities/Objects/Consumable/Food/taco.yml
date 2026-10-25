@@ -64,13 +64,6 @@
     shape:
     - 0,0,1,0
     storedOffset: 0,1
-  # Wayfarer: 8h shelf life for prepared meals
-  - type: Perishable
-    rotAfter: 28800
-    molsPerSecondPerUnitMass: 0
-  - type: Temperature
-    currentTemperature: 290
-  # End Wayfarer
   - type: Tag
     tags:
       - Meat
@@ -114,6 +107,12 @@
           Quantity: 10
         - ReagentId: Vitamin
           Quantity: 6
+  # Wayfarer: Ingestion tweaks
+  - type: Tag
+    tags:
+    - Meat
+    - Vegetable
+  # End Wayfarer
 
 - type: entity
   name: rat taco
@@ -150,6 +149,12 @@
           Quantity: 22
         - ReagentId: Vitamin
           Quantity: 6
+  # Wayfarer: Ingestion tweaks
+  - type: Tag
+    tags:
+    - Meat
+    - Vegetable
+  # End Wayfarer
 
 - type: entity
   name: chicken taco supreme
@@ -168,6 +173,12 @@
           Quantity: 22
         - ReagentId: Vitamin
           Quantity: 6
+  # Wayfarer: Ingestion tweaks
+  - type: Tag
+    tags:
+    - Meat
+    - Vegetable
+  # End Wayfarer
 
 - type: entity
   parent: FoodTacoBase
@@ -196,6 +207,12 @@
           Quantity: 4
         - ReagentId: CapsaicinOil
           Quantity: 6
+  # Wayfarer: Ingestion tweaks
+  - type: Tag
+    tags:
+    - Meat
+    - Vegetable
+  # End Wayfarer
 
 - type: entity
   name: soft taco
@@ -223,3 +240,4 @@
   - type: Tag
     tags:
       - Meat
+      - Vegetable # Wayfarer

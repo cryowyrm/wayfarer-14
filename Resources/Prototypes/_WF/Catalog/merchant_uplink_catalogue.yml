@@ -41,7 +41,7 @@
   productEntity: VendingMachineRestockChemVend
   icon: { sprite: _WF/Objects/Specific/Service/restockicon.rsi, state: chemvend_restockicon }
   cost:
-    WayfarerMerchantToken: 50
+    WayfarerMerchantToken: 40
   categories:
   - UplinkMerchantsMedical
   - UplinkMerchantsRestock
@@ -183,7 +183,7 @@
   productEntity: VendingMachineRestockChefvend
   icon: { sprite: _WF/Objects/Specific/Service/restockicon.rsi, state: chef_restockicon }
   cost:
-    WayfarerMerchantToken: 50
+    WayfarerMerchantToken: 40
   categories:
   - UplinkMerchantMisc
   - UplinkMerchantsRestock
@@ -270,7 +270,7 @@
   productEntity: CargoTechFabCircuitboardNF
   icon: { sprite: Structures/Machines/techfab.rsi, state: icon }
   cost:
-    WayfarerMerchantToken: 100
+    WayfarerMerchantToken: 50
   categories:
   - UplinkMerchantMisc
   conditions:
@@ -357,7 +357,7 @@
   productEntity: ClothingHeadHatMerchantBeret
   icon: { sprite: _WF/Clothing/Head/Hats/merchants_beret.rsi, state: icon }
   cost:
-    WayfarerMerchantToken: 100
+    WayfarerMerchantToken: 200 # 2x 100 normal, 200 express
   categories:
   - UplinkMerchantsFun
   conditions:
@@ -374,7 +374,7 @@
   productEntity: ClothingOuterArmoredWinterMerchant
   icon: { sprite: _WF/Clothing/OuterClothing/Misc/merchant_armored_coat.rsi, state: icon }
   cost:
-    WayfarerMerchantToken: 500
+    WayfarerMerchantToken: 1000 # 2x 500 normal, 1000 express
   categories:
   - UplinkMerchantsFun
   conditions:
@@ -391,7 +391,7 @@
   productEntity: ClothingNeckMerchant
   icon: { sprite: _WF/Clothing/Neck/Cloaks/merchant.rsi, state: icon }
   cost:
-    WayfarerMerchantToken: 1000
+    WayfarerMerchantToken: 2000 # 2x 1000 normal, 2000 express
   categories:
   - UplinkMerchantsFun
   conditions:
@@ -460,9 +460,10 @@
   productEntity: ChemicalBarrelFlour
   icon: { sprite: Objects/Consumable/Food/ingredients.rsi, state: flour-big }
   cost:
-    WayfarerMerchantToken: 15
+    WayfarerMerchantToken: 10
   categories:
   - UplinkMerchantsFood
+  - UplinkMerchantsBarrel
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -908,6 +909,1366 @@
     WayfarerMerchantToken: 30
   categories:
   - UplinkMerchantsRestock
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#chembarrels--
+#Water tank
+- type: listing
+  id: UplinkMerchantWaterTank
+  name:  uplink-merchant-watertank-name
+  description: uplink-merchant-watertank-desc
+  productEntity: WaterTankHighCapacity
+  icon: { sprite: Structures/Storage/tanks.rsi, state: highwatertank-2 }
+  cost:
+    WayfarerMerchantToken: 40
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#aluminium
+- type: listing
+  id: UplinkMerchantBarrelAluminium
+  name:  uplink-merchant-barrelaluminium-name
+  description: uplink-merchant-barrelaluminium-desc
+  productEntity: ChemicalBarrelAluminium
+  icon: { sprite: _NF/Objects/Storage/Barrels/white.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#carbon
+- type: listing
+  id: UplinkMerchantBarrelCarbon
+  name:  uplink-merchant-barrelcarbon-name
+  description: uplink-merchant-barrelcarbon-desc
+  productEntity: ChemicalBarrelCarbon
+  icon: { sprite: _NF/Objects/Storage/Barrels/black.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#chlorine
+- type: listing
+  id: UplinkMerchantBarrelChlorine
+  name:  uplink-merchant-barrelchlorine-name
+  description: uplink-merchant-barrelchlorine-desc
+  productEntity: ChemicalBarrelChlorine
+  icon: { sprite: _NF/Objects/Storage/Barrels/green.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#copper
+- type: listing
+  id: UplinkMerchantBarrelCopper
+  name:  uplink-merchant-barrelcopper-name
+  description: uplink-merchant-barrelcopper-desc
+  productEntity: ChemicalBarrelCopper
+  icon: { sprite: _NF/Objects/Storage/Barrels/red.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#diethylamine
+- type: listing
+  id: UplinkMerchantBarrelDiethylamine
+  name:  uplink-merchant-barreldiethylamine-name
+  description: uplink-merchant-barreldiethylamine-desc
+  productEntity: ChemicalBarrelDiethylamine
+  icon: { sprite: _NF/Objects/Storage/Barrels/green.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#ethanol
+- type: listing
+  id: UplinkMerchantBarrelEthanol
+  name:  uplink-merchant-barrelethanol-name
+  description: uplink-merchant-barrelethanol-desc
+  productEntity: ChemicalBarrelEthanol
+  icon: { sprite: _NF/Objects/Storage/Barrels/blue.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#fluorine
+- type: listing
+  id: UplinkMerchantBarrelFluorine
+  name:  uplink-merchant-barrelfluorine-name
+  description: uplink-merchant-barrelfluorine-desc
+  productEntity: ChemicalBarrelFluorine
+  icon: { sprite: _NF/Objects/Storage/Barrels/blue.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#gold
+- type: listing
+  id: UplinkMerchantBarrelGold
+  name:  uplink-merchant-barrelgold-name
+  description: uplink-merchant-barrelgold-desc
+  productEntity: ChemicalBarrelGold
+  icon: { sprite: _NF/Objects/Storage/Barrels/yellow.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#hydrogen
+- type: listing
+  id: UplinkMerchantBarrelHydrogen
+  name:  uplink-merchant-barrelhydrogen-name
+  description: uplink-merchant-barrelhydrogen-desc
+  productEntity: ChemicalBarrelHydrogen
+  icon: { sprite: _NF/Objects/Storage/Barrels/white.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#ice
+- type: listing
+  id: UplinkMerchantBarrelIce
+  name:  uplink-merchant-barrelice-name
+  description: uplink-merchant-barrelice-desc
+  productEntity: ChemicalBarrelIce
+  icon: { sprite: Objects/Tiles/tile.rsi, state: astroice }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#iodine
+- type: listing
+  id: UplinkMerchantBarrelIodine
+  name:  uplink-merchant-barreliodine-name
+  description: uplink-merchant-barreliodine-desc
+  productEntity: ChemicalBarrelIodine
+  icon: { sprite: _NF/Objects/Storage/Barrels/red.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#iron
+- type: listing
+  id: UplinkMerchantBarrelIron
+  name:  uplink-merchant-barreliron-name
+  description: uplink-merchant-barreliron-desc
+  productEntity: ChemicalBarrelIron
+  icon: { sprite: _NF/Objects/Storage/Barrels/grey.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#lithium
+- type: listing
+  id: UplinkMerchantBarrelLithium
+  name:  uplink-merchant-barrellithium-name
+  description: uplink-merchant-barrellithium-desc
+  productEntity: ChemicalBarrelLithium
+  icon: { sprite: _NF/Objects/Storage/Barrels/grey.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#mercury
+- type: listing
+  id: UplinkMerchantBarrelMercury
+  name:  uplink-merchant-barrelmercury-name
+  description: uplink-merchant-barrelmercury-desc
+  productEntity: ChemicalBarrelMercury
+  icon: { sprite: _NF/Objects/Storage/Barrels/grey.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#nitrogen
+- type: listing
+  id: UplinkMerchantBarrelNitrogen
+  name:  uplink-merchant-barrelnitrogen-name
+  description: uplink-merchant-barrelnitrogen-desc
+  productEntity: ChemicalBarrelNitrogen
+  icon: { sprite: _NF/Objects/Storage/Barrels/red.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#oil
+- type: listing
+  id: UplinkMerchantBarrelOil
+  name:  uplink-merchant-barreloil-name
+  description: uplink-merchant-barreloil-desc
+  productEntity: ChemicalBarrelOil
+  icon: { sprite: _NF/Objects/Storage/Barrels/black.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#oxygen
+- type: listing
+  id: UplinkMerchantBarrelOxygen
+  name:  uplink-merchant-barreloxygen-name
+  description: uplink-merchant-barreloxygen-desc
+  productEntity: ChemicalBarrelOxygen
+  icon: { sprite: _NF/Objects/Storage/Barrels/blue.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#phosphorus
+- type: listing
+  id: UplinkMerchantBarrelPhosphorus
+  name:  uplink-merchant-barrelphosphorus-name
+  description: uplink-merchant-barrelphosphorus-desc
+  productEntity: ChemicalBarrelPhosphorus
+  icon: { sprite: _NF/Objects/Storage/Barrels/red.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+# no potassium (you can buy banana juice instead)
+#radium
+- type: listing
+  id: UplinkMerchantBarrelRadium
+  name:  uplink-merchant-barrelradium-name
+  description: uplink-merchant-barrelradium-desc
+  productEntity: ChemicalBarrelRadium
+  icon: { sprite: _NF/Objects/Storage/Barrels/green.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#sodium
+- type: listing
+  id: UplinkMerchantBarrelSodium
+  name:  uplink-merchant-barrelsodium-name
+  description: uplink-merchant-barrelsodium-desc
+  productEntity: ChemicalBarrelSodium
+  icon: { sprite: _NF/Objects/Storage/Barrels/white.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#silicon
+- type: listing
+  id: UplinkMerchantBarrelSilicon
+  name:  uplink-merchant-barrelsilicon-name
+  description: uplink-merchant-barrelsilicon-desc
+  productEntity: ChemicalBarrelSilicon
+  icon: { sprite: _NF/Objects/Storage/Barrels/black.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#silver
+- type: listing
+  id: UplinkMerchantBarrelSilver
+  name:  uplink-merchant-barrelsilver-name
+  description: uplink-merchant-barrelsilver-desc
+  productEntity: ChemicalBarrelSilver
+  icon: { sprite: _NF/Objects/Storage/Barrels/white.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#sulfur
+- type: listing
+  id: UplinkMerchantBarrelSulfur
+  name:  uplink-merchant-barrelsulfur-name
+  description: uplink-merchant-barrelsulfur-desc
+  productEntity: ChemicalBarrelSulfur
+  icon: { sprite: _NF/Objects/Storage/Barrels/yellow.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#barrels --
+#absinthe
+- type: listing
+  id: UplinkMerchantBarrelAbsinthe
+  name:  uplink-merchant-barrelabsinthe-name
+  description: uplink-merchant-barrelabsinthe-desc
+  productEntity: ChemicalBarrelAbsinthe
+  icon: { sprite: Objects/Consumable/Drinks/absinthebottle.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#Ale
+- type: listing
+  id: UplinkMerchantBarrelAle
+  name:  uplink-merchant-barrelale-name
+  description: uplink-merchant-barrelale-desc
+  productEntity: ChemicalBarrelAle
+  icon: { sprite: Objects/Consumable/Drinks/alebottle.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#apple juice
+- type: listing
+  id: UplinkMerchantBarrelAppleJuice
+  name:  uplink-merchant-barrelapplejuice-name
+  description: uplink-merchant-barrelapplejuice-desc
+  productEntity: ChemicalBarrelJuiceApple
+  icon: { sprite: _NF/Objects/Storage/Barrels/red.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#BBQ sauce
+- type: listing
+  id: UplinkMerchantBarrelBbqSauce
+  name:  uplink-merchant-barrelbbqsauce-name
+  description: uplink-merchant-barrelbbqsauce-desc
+  productEntity: ChemicalBarrelBbqSauce
+  icon: { sprite: Objects/Consumable/Food/condiments.rsi, state: packet-bbq }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#Banana juice
+- type: listing
+  id: UplinkMerchantBarrelBananaJuice
+  name:  uplink-merchant-barrelbananajuice-name
+  description: uplink-merchant-barrelbananajuice-desc
+  productEntity: ChemicalBarrelJuiceBanana
+  icon: { sprite: Objects/Specific/Hydroponics/banana.rsi, state: produce }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  - UplinkMerchantsChemBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#beer
+- type: listing
+  id: UplinkMerchantBarrelBeer
+  name:  uplink-merchant-barrelbeer-name
+  description: uplink-merchant-barrelbeer-desc
+  productEntity: ChemicalBarrelBeer
+  icon: { sprite: Objects/Consumable/Drinks/beer.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#berry juice
+- type: listing
+  id: UplinkMerchantBarrelBerryJuice
+  name:  uplink-merchant-barrelberryjuice-name
+  description: uplink-merchant-barrelberryjuice-desc
+  productEntity: ChemicalBarrelJuiceBerry
+  icon: { sprite: _NF/Objects/Storage/Barrels/red.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#Coffee
+- type: listing
+  id: UplinkMerchantBarrelCoffee
+  name:  uplink-merchant-barrelcoffee-name
+  description: uplink-merchant-barrelcoffee-desc
+  productEntity: ChemicalBarrelCoffee
+  icon: { sprite: _NF/Objects/Storage/Barrels/black.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#Coffee Liqueur
+- type: listing
+  id: UplinkMerchantBarrelCoffeeLiqueur
+  name:  uplink-merchant-barrelcoffeeliqueur-name
+  description: uplink-merchant-barrelCoffeeliqueur-desc
+  productEntity: ChemicalBarrelCoffeeLiqueur
+  icon: { sprite: Objects/Consumable/Drinks/coffeeliqueurbottle.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#cognac
+- type: listing
+  id: UplinkMerchantBarrelCognac
+  name:  uplink-merchant-barrelcognac-name
+  description: uplink-merchant-barrelcognac-desc
+  productEntity: ChemicalBarrelCognac
+  icon: { sprite: Objects/Consumable/Drinks/cognacbottle.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#cornmeal
+- type: listing
+  id: UplinkMerchantBarrelCornmeal
+  name:  uplink-merchant-barrelcornmeal-name
+  description: uplink-merchant-barrelcornmeal-desc
+  productEntity: ChemicalBarrelCornmeal
+  icon: { sprite: Objects/Consumable/Food/ingredients.rsi, state: cornmeal-big }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#gin
+- type: listing
+  id: UplinkMerchantBarrelGin
+  name:  uplink-merchant-barrelgin-name
+  description: uplink-merchant-barrelgin-desc
+  productEntity: ChemicalBarrelGin
+  icon: { sprite: Objects/Consumable/Drinks/ginbottle.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#green tea
+- type: listing
+  id: UplinkMerchantBarrelGreenTea
+  name:  uplink-merchant-barrelgreentea-name
+  description: uplink-merchant-barrelgreentea-desc
+  productEntity: ChemicalBarrelGreenTea
+  icon: { sprite: Objects/Consumable/Drinks/greenteaglass.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#grenadine
+- type: listing
+  id: UplinkMerchantBarrelGrenadine
+  name:  uplink-merchant-barrelgrenadine-name
+  description: uplink-merchant-barrelgrenadine-desc
+  productEntity: ChemicalBarrelGrenadine
+  icon: { sprite: Objects/Consumable/Drinks/grenadinebottle.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#honey
+- type: listing
+  id: UplinkMerchantBarrelHoney
+  name:  uplink-merchant-barrelhoney-name
+  description: uplink-merchant-barrelhoney-desc
+  productEntity: ChemicalBarrelHoney
+  icon: { sprite: _NF/Objects/Specific/Hydroponics/bees.rsi, state: produce }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#hotsauce
+- type: listing
+  id: UplinkMerchantBarrelHotsauce
+  name:  uplink-merchant-barrelhotsauce-name
+  description: uplink-merchant-barrelhotsauce-desc
+  productEntity: ChemicalBarrelHotsauce
+  icon: { sprite: Objects/Consumable/Food/condiments.rsi, state: bottle-hotsauce }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#ketchup
+- type: listing
+  id: UplinkMerchantBarrelKetchup
+  name:  uplink-merchant-barrelkethcup-name
+  description: uplink-merchant-barrelkethcup-desc
+  productEntity: ChemicalBarrelKetchup
+  icon: { sprite: _NF/Objects/Consumable/Food/condiments.rsi, state: squeeze-bottle-ketchup }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#lemon juice
+- type: listing
+  id: UplinkMerchantBarrelLemonJuice
+  name:  uplink-merchant-barrellemon-name
+  description: uplink-merchant-barrellemon-desc
+  productEntity: ChemicalBarrelJuiceLime
+  icon: { sprite: Objects/Consumable/Drinks/lemonjuice.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#lime juice
+- type: listing
+  id: UplinkMerchantBarrelLimeJuice
+  name:  uplink-merchant-barrellime-name
+  description: uplink-merchant-barrellime-desc
+  productEntity: ChemicalBarrelJuiceLime
+  icon: { sprite: Objects/Consumable/Drinks/limejuice.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#mayo
+- type: listing
+  id: UplinkMerchantBarrelMayo
+  name:  uplink-merchant-barrelmayo-name
+  description: uplink-merchant-barrelmayo-desc
+  productEntity: ChemicalBarrelMayo
+  icon: { sprite: Objects/Consumable/Food/ingredients.rsi, state: mayo }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#mead
+- type: listing
+  id: UplinkMerchantBarrelMead
+  name:  uplink-merchant-barrelmead-name
+  description: uplink-merchant-barrelmead-desc
+  productEntity: ChemicalBarrelMead
+  icon: { sprite: Objects/Consumable/Drinks/meadglass.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#mustard
+- type: listing
+  id: UplinkMerchantBarrelMustard
+  name:  uplink-merchant-barrelmustard-name
+  description: uplink-merchant-barrelmustard-desc
+  productEntity: ChemicalBarrelMustard
+  icon: { sprite: _NF/Objects/Consumable/Food/condiments.rsi, state: squeeze-bottle-mustard }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#olive oil
+- type: listing
+  id: UplinkMerchantBarrelOliveoil
+  name:  uplink-merchant-barreloliveoil-name
+  description: uplink-merchant-barreloliveoil-desc
+  productEntity: ChemicalBarrelOliveoil
+  icon: { sprite: Nyanotrasen/Objects/Consumable/Drinks/oil_jar.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#orange juice
+- type: listing
+  id: UplinkMerchantBarrelOrangeJuice
+  name:  uplink-merchant-barrelorangejuice-name
+  description: uplink-merchant-barrelorangejuice-desc
+  productEntity: ChemicalBarrelJuiceOrange
+  icon: { sprite: Objects/Consumable/Drinks/orangejuice.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#pineapple juice
+- type: listing
+  id: UplinkMerchantBarrelPineappleJuice
+  name:  uplink-merchant-barrelpineappleejuice-name
+  description: uplink-merchant-barrelpineapplejuice-desc
+  productEntity: ChemicalBarrelJuicePineapple
+  icon: { sprite: Objects/Consumable/Drinks/pineapplejuice.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#rice
+- type: listing
+  id: UplinkMerchantBarrelRice
+  name:  uplink-merchant-barrelrice-name
+  description: uplink-merchant-barrelrice-desc
+  productEntity: ChemicalBarrelRice
+  icon: { sprite: Objects/Consumable/Food/ingredients.rsi, state: rice-big }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#rootbeer
+- type: listing
+  id: UplinkMerchantBarrelRootBeer
+  name:  uplink-merchant-barrelrootbeer-name
+  description: uplink-merchant-barrelrootbeer-desc
+  productEntity: ChemicalBarrelRootBeer
+  icon: { sprite: Objects/Consumable/Drinks/rootbeer.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#rum
+- type: listing
+  id: UplinkMerchantBarrelRum
+  name:  uplink-merchant-barrelrum-name
+  description: uplink-merchant-barrelrum-desc
+  productEntity: ChemicalBarrelRum
+  icon: { sprite: Objects/Consumable/Drinks/rumbottle.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#soda water
+- type: listing
+  id: UplinkMerchantBarrelSodaWater
+  name:  uplink-merchant-barrelsodawater-name
+  description: uplink-merchant-barrelsodawater-desc
+  productEntity: ChemicalBarrelSodaWater
+  icon: { sprite: Objects/Consumable/Drinks/sodawater-bottle.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#soy milk
+- type: listing
+  id: UplinkMerchantBarrelMilkSoy
+  name:  uplink-merchant-barrelmilksoy-name
+  description: uplink-merchant-barrelmilksoy-desc
+  productEntity: ChemicalBarrelMilkSoy
+  icon: { sprite: Objects/Consumable/Drinks/soymilk.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#space cleaner
+- type: listing
+  id: UplinkMerchantBarrelSpaceCleaner
+  name:  uplink-merchant-barrelspacecleaner-name
+  description: uplink-merchant-barrelspacecleaner-desc
+  productEntity: ChemicalBarrelSpaceCleaner
+  icon: { sprite: Objects/Specific/Janitorial/janitorial.rsi, state: cleaner }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#space cola
+- type: listing
+  id: UplinkMerchantBarrelCola
+  name:  uplink-merchant-barrelcola-name
+  description: uplink-merchant-barrelcola-desc
+  productEntity: ChemicalBarrelCola
+  icon: { sprite: Objects/Consumable/Drinks/colabottle.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#space lube
+- type: listing
+  id: UplinkMerchantBarrelSpaceLube
+  name:  uplink-merchant-barrelspacelube-name
+  description: uplink-merchant-barrelspacelube-desc
+  productEntity: ChemicalBarrelSpaceLube
+  icon: { sprite: _NF/Objects/Storage/Barrels/green.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#sugar
+- type: listing
+  id: UplinkMerchantBarrelSugar
+  name:  uplink-merchant-barrelsugar-name
+  description: uplink-merchant-barrelsugar-desc
+  productEntity: ChemicalBarrelSugar
+  icon: { sprite: Objects/Consumable/Food/ingredients.rsi, state: sugar-big }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  - UplinkMerchantsChemBarrel
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#tea
+- type: listing
+  id: UplinkMerchantBarrelTea
+  name:  uplink-merchant-barreltea-name
+  description: uplink-merchant-barreltea-desc
+  productEntity: ChemicalBarrelTea
+  icon: { sprite: _NF/Objects/Storage/Barrels/black.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#tequila
+- type: listing
+  id: UplinkMerchantBarrelTequila
+  name:  uplink-merchant-barreltequila-name
+  description: uplink-merchant-barreltequila-desc
+  productEntity: ChemicalBarrelTequila
+  icon: { sprite: Objects/Consumable/Drinks/tequillabottle.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#vegetable oil
+- type: listing
+  id: UplinkMerchantBarrelCornoil
+  name:  uplink-merchant-barrelcornoil-name
+  description: uplink-merchant-barrelcornoil-desc
+  productEntity: ChemicalBarrelCornoil
+  icon: { sprite: Nyanotrasen/Objects/Consumable/Drinks/oil_jar.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#vermouth
+- type: listing
+  id: UplinkMerchantBarrelVermouth
+  name:  uplink-merchant-barrelvermouth-name
+  description: uplink-merchant-barrelvermouth-desc
+  productEntity: ChemicalBarrelVermouth
+  icon: { sprite: Objects/Consumable/Drinks/vermouthbottle.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#vodka
+- type: listing
+  id: UplinkMerchantBarrelVodka
+  name:  uplink-merchant-barrelvodka-name
+  description: uplink-merchant-barrelvodka-desc
+  productEntity: ChemicalBarrelVodka
+  icon: { sprite: Objects/Consumable/Drinks/vodkabottle.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#whiskey
+- type: listing
+  id: UplinkMerchantBarrelWhiskey
+  name:  uplink-merchant-barrelwhiskey-name
+  description: uplink-merchant-barrelwhiskey-desc
+  productEntity: ChemicalBarrelWhiskey
+  icon: { sprite: Objects/Consumable/Drinks/whiskeybottle.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#wine
+- type: listing
+  id: UplinkMerchantBarrelWine
+  name:  uplink-merchant-barrelwine-name
+  description: uplink-merchant-barrelwine-desc
+  productEntity: ChemicalBarrelWine
+  icon: { sprite: Objects/Consumable/Drinks/winebottle.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 10
+  categories:
+  - UplinkMerchantsBarrel
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+
+#bulk food crates--
+#variant cubebox
+- type: listing
+  id: UplinkMerchantVariantCubeBox
+  name:  uplink-merchant-variantcubebox-name
+  description: uplink-merchant-variantcubebox-desc
+  productEntity: VariantCubeBox
+  icon: { sprite: Objects/Misc/monkeycube.rsi, state: box_variant }
+  cost:
+    WayfarerMerchantToken: 15
+  categories:
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#ruminant cubeboxes
+- type: listing
+  id: UplinkMerchantRuminantCubeBox
+  name:  uplink-merchant-ruminantcubebox-name
+  description: uplink-merchant-ruminantcubebox-desc
+  productEntity: RuminantCubeBox
+  icon: { sprite: _NF/Objects/Misc/monkeycube.rsi, state: box_ruminant }
+  cost:
+    WayfarerMerchantToken: 15
+  categories:
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#poultry cubebox
+- type: listing
+  id: UplinkMerchantPoultryCubeBox
+  name:  uplink-merchant-poultrycubebox-name
+  description: uplink-merchant-poultrycubebox-desc
+  productEntity: PoultryCubeBox
+  icon: { sprite: _NF/Objects/Misc/monkeycube.rsi, state: box_poultry }
+  cost:
+    WayfarerMerchantToken: 15
+  categories:
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#monkye cubebox
+- type: listing
+  id: UplinkMerchantMonkeyCubeBox
+  name:  uplink-merchant-monkeycubebox-name
+  description: uplink-merchant-monkeycubebox-desc
+  productEntity: MonkeyCubeBox
+  icon: { sprite: Objects/Misc/monkeycube.rsi, state: box }
+  cost:
+    WayfarerMerchantToken: 15
+  categories:
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#kobold cubeboxes
+- type: listing
+  id: UplinkMerchantKoboldCubeBox
+  name:  uplink-merchant-koboldcubebox-name
+  description: uplink-merchant-koboldcubebox-desc
+  productEntity: KoboldCubeBox
+  icon: { sprite: Objects/Misc/monkeycube.rsi, state: box_kobold }
+  cost:
+    WayfarerMerchantToken: 15
+  categories:
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#farm cubebox
+- type: listing
+  id: UplinkMerchantFarmCubeBox
+  name:  uplink-merchant-farmcubebox-name
+  description: uplink-merchant-farmcubebox-desc
+  productEntity: FarmCubeBox
+  icon: { sprite: _NF/Objects/Misc/monkeycube.rsi, state: box_farm }
+  cost:
+    WayfarerMerchantToken: 15
+  categories:
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#smart fridge flatpack
+- type: listing
+  id: UplinkMerchantSmartFridgeFlatpack
+  name:  uplink-merchant-smartfridgeflatpack-name
+  description: uplink-merchant-smartfridgeflatpack-desc
+  productEntity: SmartFridgeFlatpack
+  icon: { sprite: Structures/Machines/smartfridge.rsi, state: smartfridge }
+  cost:
+    WayfarerMerchantToken: 60
+  categories:
+  - UplinkMerchantsFood
+  - UplinkMerchantsMedical
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+
+#xenomeat
+- type: listing
+  id: UplinkMerchantCrateMeatXeno
+  name:  uplink-merchant-cratemeatxeno-name
+  description: uplink-merchant-cratemeatxeno-desc
+  productEntity: CrateMeatXeno
+  icon: { sprite: Objects/Consumable/Food/meat.rsi, state: xeno }
+  cost:
+    WayfarerMerchantToken: 20
+  categories:
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#carpmeat
+- type: listing
+  id: UplinkMerchantCrateMeatFish
+  name:  uplink-merchant-cratemeatfish-name
+  description: uplink-merchant-cratemeatfish-desc
+  productEntity: CrateMeatFish
+  icon: { sprite: Objects/Consumable/Food/meat.rsi, state: fish }
+  cost:
+    WayfarerMerchantToken: 20
+  categories:
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#dragon meat
+- type: listing
+  id: UplinkMerchantCrateMeatDragon
+  name:  uplink-merchant-cratemeatdragon-name
+  description: uplink-merchant-cratemeatdragon-desc
+  productEntity: CrateMeatDragon
+  icon: { sprite: Objects/Consumable/Food/meat.rsi, state: dragon }
+  cost:
+    WayfarerMerchantToken: 30
+  categories:
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#Raw Meat
+- type: listing
+  id: UplinkMerchantCrateMeat
+  name:  uplink-merchant-cratemeat-name
+  description: uplink-merchant-cratemeat-desc
+  productEntity: CrateMeat
+  icon: { sprite: Objects/Consumable/Food/meat.rsi, state: plain }
+  cost:
+    WayfarerMerchantToken: 15
+  categories:
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#chicken
+- type: listing
+  id: UplinkMerchantCrateMeatChicken
+  name:  uplink-merchant-cratemeatchicken-name
+  description: uplink-merchant-cratemeatchicken-desc
+  productEntity: CrateMeatChicken
+  icon: { sprite: Objects/Consumable/Food/meat.rsi, state: bird }
+  cost:
+    WayfarerMerchantToken: 15
+  categories:
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#egg carton crate
+- type: listing
+  id: UplinkMerchantCrateContainerEgg
+  name:  uplink-merchant-cratecontaineregg-name
+  description: uplink-merchant-cratecontaineregg-desc
+  productEntity: CrateContainerEgg
+  icon: { sprite: Objects/Consumable/Food/egg.rsi, state: box-closed }
+  cost:
+    WayfarerMerchantToken: 15
+  categories:
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#butter
+- type: listing
+  id: UplinkMerchantCrateButter
+  name:  uplink-merchant-cratebutter-name
+  description: uplink-merchant-cratebutter-desc
+  productEntity: CrateButter
+  icon: { sprite: Objects/Consumable/Food/ingredients.rsi, state: butter }
+  cost:
+    WayfarerMerchantToken: 20
+  categories:
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#cheese wheel
+- type: listing
+  id: UplinkMerchantCrateCheese
+  name:  uplink-merchant-cratecheese-name
+  description: uplink-merchant-cratecheese-desc
+  productEntity: CrateCheese
+  icon: { sprite: Objects/Consumable/Food/ingredients.rsi, state: cheesewheel }
+  cost:
+    WayfarerMerchantToken: 20
+  categories:
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#bacon
+- type: listing
+  id: UplinkMerchantCrateBacon
+  name:  uplink-merchant-cratebacon-name
+  description: uplink-merchant-cratebacon-desc
+  productEntity: CrateBacon
+  icon: { sprite: Objects/Consumable/Food/meat.rsi, state: bacon }
+  cost:
+    WayfarerMerchantToken: 15
+  categories:
+  - UplinkMerchantsFood
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#extra misc--
+#foam force crate
+- type: listing
+  id: UplinkMerchantFunFoamGuns
+  name:  uplink-merchant-funfoamguns-name
+  description: uplink-merchant-funfoamguns-desc
+  productEntity: CrateFunFoamGuns
+  icon: { sprite: Objects/Fun/Foam/foam_rifle.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 5
+  categories:
+  - UplinkMerchantsFun
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#magic candles
+- type: listing
+  id: UplinkMerchantCrateCandlesInfinite
+  name:  uplink-merchant-cratecandlesinfinite-name
+  description: uplink-merchant-cratecandlesinfinite-desc
+  productEntity: CrateCandlesInfinite
+  icon: { sprite: Objects/Misc/candles.rsi, state: candle-big }
+  cost:
+    WayfarerMerchantToken: 40
+  categories:
+  - UplinkMerchantsTool
+  - UplinkMerchantsFun
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - WFMerchantUplink
+#THE THRONGLER mt250 (its actually the plushie)
+- type: listing
+  id: UplinkMerchantPlushieThrongler
+  name:  uplink-merchant-plushiethrongler-name
+  description: uplink-merchant-plushiethrongler-desc
+  productEntity: PlushieThrongler
+  icon: { sprite: Objects/Weapons/Melee/Throngler2.rsi, state: icon }
+  cost:
+    WayfarerMerchantToken: 250
+  categories:
+  - UplinkMerchantsOutlaw
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:

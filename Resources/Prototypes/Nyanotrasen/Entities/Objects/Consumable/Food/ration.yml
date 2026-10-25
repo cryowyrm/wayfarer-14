@@ -22,6 +22,11 @@
     state: psb
   - type: Item
     size: Tiny
+  # Wayfarer: So that it can be put in a Candy Bucket
+  - type: Tag
+    tags:
+    - FoodSnack
+  # End Wayfarer
   - type: SpawnItemsOnUse
     items:
       - id: FoodPSBTrash
@@ -73,8 +78,8 @@
           Quantity: 15
   - type: Tag
     tags:
-    - Meat
-    - Fruit # DeltaV - Allow anyone to eat it, hopefully
+#    - Meat # Wayfarer
+#    - Fruit # DeltaV - Allow anyone to eat it, hopefully # Wayfarer
     - ReptilianFood # DeltaV - Allows feroxi (shark people) to eat it
 
 - type: entity

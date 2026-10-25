@@ -1,29 +1,36 @@
-- type: job
-  id: StationTrafficController
-  name: job-name-stc
-  description: job-description-stc
-  playTimeTracker: JobStc
-  startingGear: StcGear
-  alwaysUseSpawner: true
-  whitelisted: true
-  canBeAntag: false
-  icon: "JobIconStc"
-  supervisors: job-supervisors-sr
-  weight: 160
-  displayWeight: 50 # Second from the top
-  setPreference: true
-  access:
-  - Service
-  - Maintenance
-  - External
-  - Frontier
-  - StationTrafficController
-  special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, TrackingImplant ]
-  - !type:GiveItemOnHolidaySpecial
-    holiday: FrontierBirthday
-    prototype: FrontierBirthdayGift
+# Wayfarer: DEPRECATED - STC IS KILL
+
+#- type: job
+#  id: StationTrafficController
+#  name: job-name-stc
+#  description: job-description-stc
+#  playTimeTracker: JobStc
+#  startingGear: StcGear
+#  alwaysUseSpawner: true
+#  whitelisted: true
+#  canBeAntag: false
+#  icon: "JobIconStc"
+#  supervisors: job-supervisors-sr
+#  weight: 160
+#  displayWeight: 50 # Second from the top
+#  setPreference: true
+#  access:
+#  - Service
+#  - Maintenance
+#  - External
+#  - Frontier
+#  - StationTrafficController
+#  special:
+#  - !type:AddImplantSpecial
+#    implants: [ MindShieldImplant, TrackingImplant ]
+#  - !type:GiveItemOnHolidaySpecial
+#    holiday: FrontierBirthday
+#    prototype: FrontierBirthdayGift
+#  # Wayfarer: Spooky month!
+#  - !type:GiveItemOnHolidaySpecial
+#    holiday: Halloween
+#    prototype: TreatBagRandomTreat
+#  # End Wayfarer
 
 - type: startingGear
   id: StcGear
@@ -50,9 +57,9 @@
     - EncryptionKeySecurity
     # End Wayfarer
 
-- type: chameleonOutfit
-  id: StationTrafficControllerChameleonOutfit
-  job: StationTrafficController
-  equipment:
-    head: ClothingHeadHatStcCap
+#- type: chameleonOutfit
+#  id: StationTrafficControllerChameleonOutfit
+#  job: StationTrafficController
+#  equipment:
+#    head: ClothingHeadHatStcCap
 

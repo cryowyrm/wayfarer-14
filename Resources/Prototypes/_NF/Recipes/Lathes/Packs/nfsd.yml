@@ -28,6 +28,13 @@
   - NFAmmunitionBoxPistol45
   - NFAmmunitionBoxPistol45Overpressure
   - NFAmmunitionBoxPistol45Rubber
+  - NFAmmunitionBoxRifle60
+  - NFAmmunitionBoxRifle60Rubber
+  - NFMagazineGrenadeEmpty
+  - NFGrenadeFlash
+  - NFGrenadeEMP
+  - NFGrenadeBatonRecipe
+
   # Wayfarer: Pre-Loaded mags and colored mags QOL
   - NFMagazineHighCapacityPistol35Empty
   - WFMagazine35ExFilled
@@ -58,6 +65,7 @@
   - WFMagazine30FilledRubber
   - WFMagazine30FilledOverpressure
   - MagazineAsmgtUniversalEmpty
+  - NFMagazineShotgunDrumEmptyRecipe
   # End Wayfarer
 
 - type: latheRecipePack
@@ -83,9 +91,14 @@
   - NFClothingNeckCardNfsdWrit
   - NFBaseClothingNeckHolsterThighNfsd
   - NFBaseClothingNeckSheathThighNfsd
+  - JetpackNfsd
   - NFPouchNfsd # Wayfarer
   - WFClothingOuterStraightjacket # Wayfarer
   - WFClothingMaskGasSheriff # Wayfarer
+  - ClothingMaskGasSecurity # Wayfarer
+  - WFContrabandForensicsModule # Wayfarer
+  - WFForensicScanner # Wayfarer
+  - PinpointerUniversalNF # Wayfarer
 
 - type: latheRecipePack
   id: NfsdTargetsStatic
@@ -103,8 +116,10 @@
   #- NFWeaponRevolverArgenti # Wayfarer
   #- NFWeaponPistolMk58 # Wayfarer
   #- NFWeaponShotgunDoubleBarreled # Wayfarer
+  #- NFWeaponShotgunKammerer # Wayfarer
   #- NFWeaponRifleAssaultNovaliteC1 # Wayfarer
   #- NFWeaponRifleAssaultGestio # Wayfarer
+  #- NFWeaponEnergyRifleAssaultLaserRepeater # Wayfarer
   #- WeaponPistolPollock # Wayfarer
   - NFStunbaton
   - NFWeaponEnergyPistolDisabler
@@ -127,8 +142,12 @@
   - ClothingOuterArmorRiot
   - ClothingOuterHardsuitNfsdBronze
   - ClothingOuterHardsuitNfsdSilver
+  - ClothingOuterHardsuitNfsdGold
   - ClothingOuterHardsuitNfsdBrigmedic
+  - ClothingouterHardsuitNfsdCommodoreRecipe
   - ClothingOuterHardsuitNfsdCombat
+  - ClothingOuterHardsuitNfsdCommandRecipe
+  - ClothingOuterHardsuitNfsdExperimentalRecipe
   - WFGrenadeStinger
   - WFSmokeGrenade
   - WFEmpGrenade
@@ -138,10 +157,26 @@
   - WFGrenadeHEAT
   - WFMagazineGrenadeHEAT
   - NFGrenadeEMP
+  - WFCartridgeRocketEmp
   - NFMagazineGrenadeEMP
   - ArmorPlateLight
   - ArmorPlateMedium
   - ArmorPlateSteel
+  - CaptainSabreRecipe
+  - ClothingBeltSheathRecipe
+  - EnergySwordNfsdRecipe
+  - EnergyShieldNfsdRecipe # Wayfarer
+  - WeaponEnergyRevolverRecipe
+  - NFWeaponPistolN1984Recipe
+  - NFWeaponRifleAssaultLecter
+  - NFWeaponRifleAssaultVulcanRecipe
+  - NFWeaponSubMachineGunDrozd
+  - NFWeaponEnergySubMachineGunDeltaV
+  - NFWeaponLauncherRocketEmpRecipe
+  - WFWeaponCGPEnergyShotgunRecipe
+  - NFWeaponEnergyRifleSniperCannonRecipe
+  - NFWeaponRifleSniperAspectRecipe
+  - WeaponEmpEmitterRecipe
   # End Wayfarer
 
 - type: latheRecipePack
@@ -149,3 +184,13 @@
   recipes:
   - GyroscopeNfsdMachineCircuitboard
   - ThrusterNfsdMachineCircuitboard
+  - WFLargeThrusterMachineCircuitboardNfsd # Wayfarer
+
+- type: latheRecipePack
+  id: NfsdReportingStatic
+  recipes:
+  - CassetteTape
+  - TapeRecorder
+  - ClothingNeckBodyCameraNFSD
+  - Gavel
+  - GavelBlock

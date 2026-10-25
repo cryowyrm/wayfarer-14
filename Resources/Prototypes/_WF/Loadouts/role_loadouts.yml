@@ -18,6 +18,7 @@
   - WFImplanter
   - WFBackpackItems
   - WFHandItems
+  - ContractorSupportPets
   - NFSpeciesSpecific
   - WFSidearm
   - WFLongarm
@@ -43,6 +44,7 @@
   - WFImplanter
   - WFBackpackItems
   - WFHandItems
+  - ContractorSupportPets
   - NFSpeciesSpecific
   - WFSidearm
   - WFLongarm
@@ -67,36 +69,39 @@
   - WFImplanter
   - WFBackpackItems
   - WFHandItems
+  - ContractorSupportPets
   - NFSpeciesSpecific
   - WFSidearm
   - WFLongarm
   - WFAmmo
 
-- type: roleLoadout
-  id: JobStationTrafficController
-  groups:
-  - StcHead
-  - WFNeck
-  - StcJumpsuit
-  - ContractorGloves
-  - WFBackpack
-  - WFOuterClothing
-  - StcForcedOuterClothing
-  - StcShoes
-  - WFFace
-  - StcGlasses
-  - WFBelt
-  - StcEars
-  - WFBoxSurvival
-  - WFWallet
-  - WFCartridge
-  - WFImplanter
-  - WFBackpackItems
-  - WFHandItems
-  - NFSpeciesSpecific
-  - WFSidearm
-  - WFLongarm
-  - WFAmmo
+# DEPRECATED: STC IS KILL
+#- type: roleLoadout
+#  id: JobStationTrafficController
+#  groups:
+#  - StcHead
+#  - WFNeck
+#  - StcJumpsuit
+#  - ContractorGloves
+#  - WFBackpack
+#  - WFOuterClothing
+#  - StcForcedOuterClothing
+#  - StcShoes
+#  - WFFace
+#  - StcGlasses
+#  - WFBelt
+#  - StcEars
+#  - WFBoxSurvival
+#  - WFWallet
+#  - WFCartridge
+#  - WFImplanter
+#  - WFBackpackItems
+#  - WFHandItems
+#  - ContractorSupportPets
+#  - NFSpeciesSpecific
+#  - WFSidearm
+#  - WFLongarm
+#  - WFAmmo
 
 - type: roleLoadout
   id: JobStationRepresentative
@@ -118,8 +123,10 @@
   - WFWallet
   - WFCartridge
   - WFImplanter
+  - WFEncryptionKey
   - StationRepBackpackItems
   - WFHandItems
+  - ContractorSupportPets
   - NFSpeciesSpecific
   - WFSidearm
   - WFLongarm
@@ -149,6 +156,7 @@
   - WFEncryptionKey
   - WFBackpackItems
   - WFHandItems
+  - ContractorSupportPets
   - NFSpeciesSpecific
   - WFSidearm
   - WFLongarm
@@ -177,6 +185,7 @@
   - WFEncryptionKey
   - WFBackpackItems
   - WFHandItems
+  - ContractorSupportPets
   - NFSpeciesSpecific
   - WFSidearm
   - WFLongarm
@@ -204,6 +213,7 @@
   - WFEncryptionKey
   - WFBackpackItems
   - WFHandItems
+  - ContractorSupportPets
   - NFSpeciesSpecific
   - WFSidearm
   - WFLongarm
@@ -227,12 +237,13 @@
   - NfsdEarsMaster
   - NfsdBoxSurvival
   - JuniorPeacekeeperPDA
-  - WFWallet
+  - ClothingWalletCGP
   - WFCartridge
   - WFImplanter
   - WFEncryptionKey
   - WFBackpackItems
   - WFHandItems
+  - ContractorSupportPets
   - NfsdSpeciesSpecific
   - WFSidearmCGP
   - WFLongarm
@@ -255,12 +266,13 @@
   - NfsdEarsMaster
   - NfsdBoxSurvival
   - PeacekeeperPDA
-  - WFWallet
+  - ClothingWalletCGP
   - WFCartridge
   - WFImplanter
   - WFEncryptionKey
   - WFBackpackItems
   - WFHandItems
+  - ContractorSupportPets
   - NfsdSpeciesSpecific
   - WFSidearmCGP
   - WFLongarm
@@ -273,7 +285,7 @@
   - BrigmedicNeck
   - BrigmedicJumpsuit
   - BrigmedicGloves
-  - NfsdBackpackCream
+  - WFBrigmedicBackpack
   - BrigmedicOuterClothing
   - NfsdForcedOuterClothing
   - NfsdShoesCream
@@ -283,12 +295,13 @@
   - NfsdEarsMaster
   - NfsdBoxSurvival
   - CorpsmanPDA
-  - WFWallet
+  - ClothingWalletCGP
   - WFCartridge
   - WFImplanter
   - WFEncryptionKey
   - WFBackpackItems
   - WFHandItems
+  - ContractorSupportPets
   - NfsdSpeciesSpecific
   - WFSidearmCGP
   - WFLongarm
@@ -311,12 +324,13 @@
   - NfsdEarsMaster
   - NfsdBoxSurvival
   - InternalAffairsPDA
-  - WFWallet
+  - ClothingWalletCGP
   - WFCartridge
   - WFImplanter
   - WFEncryptionKey
   - WFBackpackItems
   - WFHandItems
+  - ContractorSupportPets
   - NfsdSpeciesSpecific
   - WFSidearmCGP
   - WFLongarm
@@ -339,12 +353,13 @@
   - SheriffEars
   - NfsdBoxSurvival
   - MasterAtArmsPDA
-  - WFWallet
+  - ClothingWalletCGP
   - WFCartridge
   - WFImplanter
   - WFEncryptionKey
   - SeniorOfficerBackpackItems
   - WFHandItems
+  - ContractorSupportPets
   - NfsdSpeciesSpecific
   - WFSidearmCGP
   - WFLongarm
@@ -367,12 +382,13 @@
   - SheriffEars
   - NfsdBoxSurvival
   - SeniorPeacekeeperPDA
-  - WFWallet
+  - ClothingWalletCGP
   - WFCartridge
   - WFImplanter
   - WFEncryptionKey
   - SeniorOfficerBackpackItems
   - WFHandItems
+  - ContractorSupportPets
   - NfsdSpeciesSpecific
   - WFSidearmCGP
   - WFLongarm
@@ -395,12 +411,33 @@
   - SheriffEars
   - NfsdBoxSurvival
   - CommodorePDA
-  - WFWallet
+  - ClothingWalletCGP
   - WFCartridge
   - WFImplanter
+  - WFEncryptionKey
   - SeniorOfficerBackpackItems
   - WFHandItems
+  - ContractorSupportPets
   - NfsdSpeciesSpecific
   - WFSidearmCGP
   - WFLongarm
   - WFAmmo
+
+- type: roleLoadout
+  id: JobCentralCommandOfficial
+  groups:
+  - CentcomOfficialHead
+  - CentcomOfficialNeck
+  - CentcomOfficialJumpsuit
+  - CentcomOfficialGloves
+  - CentcomOfficialBackpack
+  - ContractorForcedOuterClothing
+  - CentcomOfficialOuterClothing
+  - CentcomOfficialShoes
+  - CentcomOfficialMask
+  - CentcomOfficialGlasses
+  - CentcomOfficialBelt
+  - CentcomOfficialEars
+  - WFBoxSurvival
+  - NFSpeciesSpecific
+  - CentcomOfficialSidearm

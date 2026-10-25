@@ -35,8 +35,12 @@
       - NFShipyardVoucher
       - Card # single cards
       - NFEmagPass
+      - IdCard # Wayfarer-14
       tags:
       - FitsWallet
+      - Ring # Wayfarer-14
+      - VehicleKey # Wayfarer-14
+      - Key
     blacklist:
       tags:
       - Book

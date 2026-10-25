@@ -12,7 +12,7 @@
       gridComponents:
       - type: VesselMusic
         ambientMusicPrototype: ColossusCentralMusic
-      - type: VesselInfo # WF
+      - type: VesselInfo # Wayfarer
         description: "From the Dusk begins a new dawn."
       - type: SolarPoweredGrid
         trackOnInit: true
@@ -36,10 +36,11 @@
           Wayfarer: [ -1, -1 ]
           Borg: [ -1, -1 ]
           StationRepresentative: [ 1, 1 ]
-          StationTrafficController: [ 1, 1 ]
-          Valet: [ 3, 3 ]
+          #StationTrafficController: [ 1, 1 ] # Deprecated, STC is kill
+          #Valet: [ 3, 3 ] #Deprecated, replaced by StationStaff
           NFJanitor: [ 5, 5 ]
           MailCarrier: [ 5, 5 ]
+          StationStaff: [ 10, 10 ]
           DirectorOfCare: [ 1, 1 ] ## temporary bandaid
           MedicalER: [ -1, -1 ]
         tags:

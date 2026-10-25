@@ -384,6 +384,11 @@
     - RoboticsStatic
     - BorgModulesStatic
     - BorgLimbsStatic
+    - WFExosuitRobotechToolsStatic # Wayfarer
+    - WFExosuitRobotechPartsStatic # Wayfarer
+    - WFExosuitRobotechSurgeryStatic # Wayfarer
+    - WFExosuitRobotechAnalyzersStatic # Wayfarer
+    - WFExosuitRobotechStorageStatic # Wayfarer
     dynamicPacks:
     - Robotics
     - BorgModules

@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-4.0",
+  "copyright": "Created by Feathernights on Discord for Wayfarer",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "l_foot",
+      "directions": 4
+    },
+    {
+      "name": "l_leg",
+      "directions": 4
+    },
+    {
+      "name": "l_leg-scute",
+      "directions": 4
+    },
+    {
+      "name": "l_leg-talons",
+      "directions": 4
+    },
+    {
+      "name": "r_foot",
+      "directions": 4
+    },
+    {
+      "name": "r_leg",
+      "directions": 4
+    },
+    {
+      "name": "r_leg-scute",
+      "directions": 4
+    },
+    {
+      "name": "r_leg-talons",
+      "directions": 4
+    },
+    {
+      "name": "l_hand",
+      "directions": 4
+    },
+    {
+      "name": "l_arm",
+      "directions": 4
+    },
+    {
+      "name": "l_arm-scute",
+      "directions": 4
+    },
+    {
+      "name": "l_hand-scute",
+      "directions": 4
+    },
+    {
+      "name": "l_arm-talons",
+      "directions": 4
+    },
+    {
+      "name": "r_hand",
+      "directions": 4
+    },
+    {
+      "name": "r_arm",
+      "directions": 4
+    },
+    {
+      "name": "r_hand-scute",
+      "directions": 4
+    },
+    {
+      "name": "r_arm-scute",
+      "directions": 4
+    },
+    {
+      "name": "r_arm-talons",
+      "directions": 4
+    }
+  ]
+}

@@ -2,3 +2,25 @@
   parent: BaseGoldBorgModuleRecipe
   id: BorgModuleUtility
   result: BorgModuleUtility
+
+- type: latheRecipe
+  parent: BaseToolRecipe
+  id: CraftClothingEyesHudDiagnostic
+  result: ClothingEyesHudDiagnostic
+  categories:
+  - Tools
+  completetime: 2
+  materials:
+    Steel: 300
+    Glass: 200
+
+- type: latheRecipe
+  parent: BaseToolRecipe
+  id: CraftClothingEyesEyepatchHudDiag
+  result: ClothingEyesEyepatchHudDiag
+  categories:
+  - Tools
+  completetime: 2
+  materials:
+    Steel: 300
+    Glass: 200

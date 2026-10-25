@@ -12,7 +12,8 @@ id-card-access-level-detective = Internal Affairs
 id-card-access-level-genpop-enter = Enter Genpop
 id-card-access-level-genpop-leave = Leave Genpop
 
-id-card-access-level-chief-engineer = Plant Manager
+# Wayfarer: Plant Manager<Project Manager
+id-card-access-level-chief-engineer = Project Manager
 id-card-access-level-engineering = Engineering
 id-card-access-level-atmospherics = Atmospherics
 
@@ -42,7 +43,8 @@ id-card-access-level-maintenance = Maintenance
 id-card-access-level-external = External
 
 id-card-access-level-nuclear-operative = Nuclear Operative
-id-card-access-level-syndicate-agent = Syndicate Agent
+# Wayfarer: "Syndicate Agent"<"Operative"
+id-card-access-level-syndicate-agent = Operative
 
 id-card-access-level-central-command = Central Command
 

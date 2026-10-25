@@ -1,0 +1,126 @@
+# Avian-like
+
+- type: marking
+  id: AvaliLLegAvianlike
+  bodyPart: LLeg
+  markingCategory: Legs
+  speciesRestriction: [ Avali ]
+  layering:
+    l_foot: LFoot
+    l_leg: LLeg
+    l_leg-scute: LLeg
+    l_leg-talons: LFoot
+  colorLinks:
+    l_foot: l_leg
+  sprites:
+  - sprite: _WF/Mobs/Customization/Avali/avianlike.rsi
+    state: l_foot
+  - sprite: _WF/Mobs/Customization/Avali/avianlike.rsi
+    state: l_leg
+  - sprite: _WF/Mobs/Customization/Avali/avianlike.rsi
+    state: l_leg-scute
+  - sprite: _WF/Mobs/Customization/Avali/avianlike.rsi
+    state: l_leg-talons
+
+- type: marking
+  id: AvaliRLegAvianlike
+  bodyPart: RLeg
+  markingCategory: Legs
+  speciesRestriction: [ Avali ]
+  layering:
+    r_foot: RFoot
+    r_leg: RLeg
+    r_leg-scute: RLeg
+    r_leg-talons: RFoot
+  colorLinks:
+    r_foot: r_leg
+  sprites:
+  - sprite: _WF/Mobs/Customization/Avali/avianlike.rsi
+    state: r_foot
+  - sprite: _WF/Mobs/Customization/Avali/avianlike.rsi
+    state: r_leg
+  - sprite: _WF/Mobs/Customization/Avali/avianlike.rsi
+    state: r_leg-scute
+  - sprite: _WF/Mobs/Customization/Avali/avianlike.rsi
+    state: r_leg-talons
+
+- type: marking
+  id: AvaliLArmAvianlike
+  bodyPart: LArm
+  markingCategory: Arms
+  speciesRestriction: [ Avali ]
+  layering:
+    l_hand: LHand
+    l_arm: LArm
+    l_arm-scute: LArm
+    l_hand-scute: LHand
+    l_arm-talons: LHand
+  colorLinks:
+    l_hand: l_arm
+    l_hand-scute: l_arm-scute
+  sprites:
+  - sprite: _WF/Mobs/Customization/Avali/avianlike.rsi
+    state: l_hand
+  - sprite: _WF/Mobs/Customization/Avali/avianlike.rsi
+    state: l_arm
+  - sprite: _WF/Mobs/Customization/Avali/avianlike.rsi
+    state: l_arm-scute
+  - sprite: _WF/Mobs/Customization/Avali/avianlike.rsi
+    state: l_hand-scute
+  - sprite: _WF/Mobs/Customization/Avali/avianlike.rsi
+    state: l_arm-talons
+
+- type: marking
+  id: AvaliRArmAvianlike
+  bodyPart: RArm
+  markingCategory: Arms
+  speciesRestriction: [ Avali ]
+  layering:
+    r_hand: RHand
+    r_arm: RArm
+    r_arm-scute: RArm
+    r_hand-scute: RHand
+    r_arm-talons: RHand
+  colorLinks:
+    r_hand: r_arm
+    r_hand-scute: r_arm-scute
+  sprites:
+  - sprite: _WF/Mobs/Customization/Avali/avianlike.rsi
+    state: r_hand
+  - sprite: _WF/Mobs/Customization/Avali/avianlike.rsi
+    state: r_arm
+  - sprite: _WF/Mobs/Customization/Avali/avianlike.rsi
+    state: r_arm-scute
+  - sprite: _WF/Mobs/Customization/Avali/avianlike.rsi
+    state: r_hand-scute
+  - sprite: _WF/Mobs/Customization/Avali/avianlike.rsi
+    state: r_arm-talons
+
+# Two-tone Eyes
+
+- type: marking
+  id: AvaliEyeTwotone
+  bodyPart: Eyes
+  markingCategory: Head
+  coloring:
+    layers:
+      iris:
+        type: !type:EyeColoring
+#  speciesRestriction: [ Avali ]
+  sprites:
+  - sprite: _WF/Mobs/Customization/Avali/eye_twotone.rsi
+    state: iris
+
+- type: marking
+  id: AvaliEyeGlow
+  bodyPart: Eyes
+  markingCategory: Head
+  coloring:
+    layers:
+      iris:
+        type: !type:EyeColoring
+#  speciesRestriction: [ Avali ]
+  sprites:
+  - sprite: _WF/Mobs/Customization/Avali/eye_twotone.rsi
+    state: iris-glow
+  shader: unshaded

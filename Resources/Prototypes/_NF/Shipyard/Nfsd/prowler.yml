@@ -7,35 +7,35 @@
 # Discord: mace_70903
 
 # Shuttle Notes:
-- type: vessel
-  id: Prowler
-  parent: BaseVessel
-  name: NSF Prowler
-  description: A medium-sized patrol craft, the Prowler class is a dedicated deep space pursuit vessel with an advanced sensor suite and moderate cargo capacity. 
-  price: 45000 #Appraises on purchase at ~39200. 15% markup. 
-  category: Medium
-  group: Security
-  access: Sergeant
-  shuttlePath: /Maps/_NF/Shuttles/Nfsd/prowler.yml
-  guidebookPage: ShipyardProwler
-  class:
-  - Patrol
-  engine:
-  - Bananium
+#- type: vessel
+#  id: Prowler
+#  parent: BaseVessel
+#  name: NSF Prowler
+#  description: A medium-sized patrol craft, the Prowler class is a dedicated deep space pursuit vessel with an advanced sensor suite and moderate cargo capacity.
+#  price: 45000 #Appraises on purchase at ~39200. 15% markup.
+#  category: Medium
+#  group: Security
+#  access: Sergeant
+#  shuttlePath: /Maps/_NF/Shuttles/Nfsd/prowler.yml
+#  guidebookPage: ShipyardProwler
+#  class:
+#  - Patrol
+#  engine:
+#  - Bananium
 
-- type: gameMap
-  id: Prowler
-  mapName: 'NSF Prowler'
-  mapPath: /Maps/_NF/Shuttles/Nfsd/prowler.yml
-  minPlayers: 0
-  stations:
-    Prowler:
-      stationProto: StandardFrontierSecurityVessel
-      components:
-        - type: StationNameSetup
-          mapNameTemplate: 'Prowler {1}'
-          nameGenerator:
-            !type:NanotrasenNameGenerator
-            prefixCreator: '14'
-        - type: StationJobs
-          availableJobs: {}
+#- type: gameMap
+#  id: Prowler
+#  mapName: 'NSF Prowler'
+#  mapPath: /Maps/_NF/Shuttles/Nfsd/prowler.yml
+#  minPlayers: 0
+#  stations:
+#    Prowler:
+#      stationProto: StandardFrontierSecurityVessel
+#      components:
+#        - type: StationNameSetup
+#          mapNameTemplate: 'Prowler {1}'
+#          nameGenerator:
+#            !type:NanotrasenNameGenerator
+#            prefixCreator: '14'
+#        - type: StationJobs
+#          availableJobs: {}

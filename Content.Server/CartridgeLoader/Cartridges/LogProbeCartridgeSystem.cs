@@ -13,6 +13,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using System.Text;
+using Content.Server._WF.Forensics; // Wayfarer
 
 namespace Content.Server.CartridgeLoader.Cartridges;
 
@@ -28,6 +29,7 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem // DeltaV - M
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly PaperSystem _paper = default!;
+    [Dependency] private readonly ScanLocationSystem _scanLocation = default!; // Wayfarer
 
     public override void Initialize()
     {
@@ -67,6 +69,7 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem // DeltaV - M
         _popup.PopupCursor(Loc.GetString("log-probe-scan", ("device", target)), args.InteractEvent.User);
 
         ent.Comp.EntityName = Name(target);
+        _scanLocation.Record(ent, target); // Wayfarer
         ent.Comp.PulledAccessLogs.Clear();
         ent.Comp.ScannedNanoChatData = null; // DeltaV - Clear any previous NanoChat data
 
@@ -119,6 +122,7 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem // DeltaV - M
         // generate the actual printout text
         var builder = new StringBuilder();
         builder.AppendLine(Loc.GetString("log-probe-printout-device", ("name", ent.Comp.EntityName)));
+        builder.Append(_scanLocation.GetText(ent)); // Wayfarer
         builder.AppendLine(Loc.GetString("log-probe-printout-header"));
         var number = 1;
         foreach (var log in ent.Comp.PulledAccessLogs)

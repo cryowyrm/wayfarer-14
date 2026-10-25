@@ -1,0 +1,17 @@
+- type: latheRecipePack
+  id: WFFolders
+  recipes:
+  - FolderBase
+  - FolderRed
+  - FolderBlack
+  - FolderGreen
+  - FolderBlue
+  - FolderGrey
+  - FolderYellow
+  - FolderWhite
+  
+- type: latheRecipePack
+  id: WFCgpFolders
+  recipes:
+  - FolderCgpBrown
+  - FolderCgpGreen

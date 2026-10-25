@@ -505,6 +505,14 @@
       path: /Audio/Items/bikehorn.ogg
     Ping:
       path: /Audio/Effects/Cargo/ping.ogg
+    Whirr: # Goobstation - IPC sounds
+      collection: IPCWhirrs
+      params:
+        variation: 0
+    Sigh:
+      path: /Audio/Voice/Talk/pai.ogg
+      params:
+        variation: 0.125
 
 - type: emoteSounds
   id: UnisexSiliconSyndicate
@@ -527,6 +535,10 @@
       path: /Audio/Items/bikehorn.ogg
     Ping:
       path: /Audio/Effects/Cargo/ping.ogg
+    Sigh:
+      path: /Audio/Voice/Talk/pai.ogg
+      params:
+        variation: 0.125
 
 - type: emoteSounds
   id: UnisexSiliconXenoborg

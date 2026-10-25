@@ -22,6 +22,11 @@
   - !type:GiveItemOnHolidaySpecial # Frontier
     holiday: FrontierBirthday # Frontier
     prototype: FrontierBirthdayGift # Frontier
+  # Wayfarer: Spooky month!
+  - !type:GiveItemOnHolidaySpecial
+    holiday: Halloween
+    prototype: TreatBagRandomTreat
+  # End Wayfarer
 
 - type: startingGear
   id: MailCarrierGear

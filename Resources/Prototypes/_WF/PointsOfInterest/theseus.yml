@@ -1,0 +1,57 @@
+# Author Info
+# GitHub: Nnelg
+# Discord: Nnelg
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Notes:
+#
+- type: pointOfInterest
+  id: Theseus
+  parent: BasePOI
+  name: 'Theseus High Orbit Drydock'
+  minimumDistance: 2100
+  maximumDistance: 3900
+  minimumClearance: 1000
+  spawnGroup: Required
+  gridPath: /Maps/_WF/POI/theseus.yml
+  addComponents:
+  - type: IFF
+    color: "#3737F8"
+  - type: SolarPoweredGrid
+    trackOnInit: true
+    doNotCull: true
+  - type: StationTransit
+    routes:
+      SpawnPoints: 10
+
+- type: gameMap
+  id: Theseus
+  mapName: 'Theseus High Orbit Drydock'
+  mapPath: /Maps/_WF/POI/theseus.yml
+  minPlayers: 0
+  stations:
+    Theseus:
+      stationProto: RecordsMarketFrontierOutpost # Wayfarer RecordsFrontierOutpost<RecordsMarketFrontierOutpost
+      gridComponents:
+      - type: VesselInfo # WF
+        description: "The problems seemed impossible. But we were engineers, and engineers can do damn near anything." # NASA engineer quote
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Theseus High Orbital Drydock'
+        - type: ExtraStationInformation
+          iconPath: /Textures/_NF/Interface/StationIcons/banner_engineering.png
+          stationSubtext: wayfarer-lobby-theseus-subtext
+          stationDescription: wayfarer-lobby-theseus-description
+          lobbySortOrder: 5
+        - type: StationJobs
+          availableJobs:
+            PlantManager: [ 1, 1 ]
+            PlantTechnician: [ 2, 4 ]
+            Wayfarer: [ -1, -1 ]
+        - type: StationDeadDrop
+          maxDeadDrops: 1 # Fewer here, players start here.
+        - type: TradeCrateDestination
+          destinationProto: Edison

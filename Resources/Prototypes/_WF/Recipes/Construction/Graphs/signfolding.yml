@@ -1,0 +1,60 @@
+﻿- type: constructionGraph
+  id: SignFoldingGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: SignFolded
+      steps:
+      - material: WoodPlank
+        amount: 5
+        doAfter: 5
+    - to: SignFolding
+      completed:
+      - !type:SnapToGrid
+      steps:
+      - material: WoodPlank
+        amount: 5
+        doAfter: 5
+  - node: SignFolded
+    entity: SignFolded
+    edges:
+    - to: start
+      steps:
+      - tool: Cutting
+        doAfter: 2.0
+        completed:
+        - !type:SpawnPrototype
+          prototype: MaterialWoodPlank1
+          amount: 5
+        - !type:DeleteEntity {}
+    - to: SignFolding
+      steps:
+      - tool: Anchoring
+        doAfter: 2.0
+        completed:
+        - !type:SpawnPrototype
+          prototype: SignFolding
+          amount: 1
+        - !type:DeleteEntity {}
+  - node: SignFolding
+    entity: SignFolding
+    edges:
+    - to: SignFolded
+      steps:
+      - tool: Prying
+        doAfter: 2.0
+        completed:
+        - !type:SpawnPrototype
+          prototype: SignFolded
+          amount: 1
+        - !type:DeleteEntity {}
+    - to: start
+      steps:
+      - tool: Cutting
+        doAfter: 2.0
+        completed:
+        - !type:SpawnPrototype
+          prototype: MaterialWoodPlank1
+          amount: 5
+        - !type:DeleteEntity {}

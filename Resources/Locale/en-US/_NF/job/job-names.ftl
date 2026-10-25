@@ -17,8 +17,10 @@ job-name-pilot-interview = Pilot Applicant
 job-name-nf-pirate = Outlaw
 job-name-nf-pirate-captain = Wanted Outlaw
 job-name-nf-pirate-first-mate = Outlaw
-job-name-plant-manager = Plant Manager
-job-name-plant-technician = Plant Technician
+# Wayfarer: Plant Manager<Project Manager
+job-name-plant-manager = Project Manager
+# Wayfarer: Plant Technician<Shipwright
+job-name-plant-technician = Shipwright
 job-name-security-guard = Security Guard
 job-name-sheriff = Commodore
 job-name-stc = Station Traffic Controller
@@ -38,8 +40,10 @@ JobPilotInterview = Pilot Applicant
 JobPirate = Outlaw
 JobPirateCaptain = Wanted Outlaw
 JobPirateFirstMate = Outlaw
-JobPlantManager = Plant Manager
-JobPlantTechnician = Plant Technician
+# Wayfarer: Plant Manager<Project Manager
+JobPlantManager = Project Manager
+# Wayfarer: Plant Technician<Shipwright
+JobPlantTechnician = Shipwright
 JobSecurityGuard = Security Guard
 JobSTC = Station Traffic Controller
 

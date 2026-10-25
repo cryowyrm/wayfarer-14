@@ -1,0 +1,172 @@
+﻿- type: entity
+  name: magic candle box
+  parent: BoxCardboard
+  id: BoxCandleInfinite
+  description: This box is specifically moulded to only carry magic candles.
+  components:
+  - type: Sprite
+    layers:
+    - state: box
+    - state: candle
+  - type: Storage
+    grid:
+    - 0,0,5,3
+    whitelist:
+      tags:
+      - CandleInfinite
+  - type: StorageFill
+    contents:
+    - id: CandleInfinite
+      amount: 2
+    - id: CandleBlueInfinite
+      amount: 2
+    - id: CandleRedInfinite
+      amount: 2
+    - id: CandleGreenInfinite
+      amount: 2
+    - id: CandlePurpleInfinite
+      amount: 2
+    - id: CandleBlackInfinite
+      amount: 2
+
+- type: entity
+  name: small magic candle box
+  parent: BoxCandleInfinite
+  id: BoxCandleSmallInfinite
+  components:
+  - type: StorageFill
+    contents:
+    - id: CandleBlueSmallInfinite
+      amount: 2
+    - id: CandleRedSmallInfinite
+      amount: 3
+    - id: CandleGreenSmallInfinite
+      amount: 2
+    - id: CandlePurpleSmallInfinite
+      amount: 2
+    - id: CandleBlackSmallInfinite
+      amount: 3
+
+- type: entity
+  id: CrateCandlesInfinite
+  parent: CrateGenericSteel
+  name: candles crate
+  description: Contains 4 boxes of magic candles, 2 large and 2 small. For atmosphere or something.
+  components:
+  - type: StorageFill
+    contents:
+    - id: BoxCandleInfinite
+      amount: 2
+    - id: BoxCandleSmallInfinite
+      amount: 2
+
+- type: entity
+  id: CrateBacon
+  parent: CrateFreezer
+  name: bacon freezer
+  description: Contains 30 raw pieces of bacon
+  components:
+  - type: StorageFill
+    contents:
+    - id: FoodMeatBacon
+      amount: 30
+
+- type: entity
+  id: CrateMeat
+  parent: CrateFreezer
+  name: meat freezer
+  description: Contains 30 raw pieces of meat
+  components:
+  - type: StorageFill
+    contents:
+    - id: FoodMeat
+      amount: 30
+
+- type: entity
+  id: CrateMeatChicken
+  parent: CrateFreezer
+  name: chicken meat freezer
+  description: Contains 30 raw pieces of chicken meat
+  components:
+  - type: StorageFill
+    contents:
+    - id: FoodMeatChicken
+      amount: 30
+
+- type: entity
+  id: CrateMeatResomi
+  parent: CrateFreezer
+  name: avali meat freezer
+  description: Contains 30 Raw pieces of ... Chicken blue frosty chicken meat.
+  components:
+  - type: StorageFill
+    contents:
+    - id: FoodMeatResomi
+      amount: 30
+
+- type: entity
+  id: CrateMeatDragon
+  parent: CrateFreezer
+  name: dragon meat freezer
+  description: Contains 5 Raw slabs of a space dragon
+  components:
+  - type: StorageFill
+    contents:
+    - id: FoodMeatDragon
+      amount: 5
+
+- type: entity
+  id: CrateMeatXeno
+  parent: CrateFreezer
+  name: xeno meat freezer
+  description: Contains 10 Raw pieces of xenomeat
+  components:
+  - type: StorageFill
+    contents:
+    - id: FoodMeatXeno
+      amount: 10
+
+- type: entity
+  id: CrateMeatFish
+  parent: CrateFreezer
+  name: fish meat freezer
+  description: Contains 30 Raw pieces of carp
+  components:
+  - type: StorageFill
+    contents:
+    - id: FoodMeatFish
+      amount: 30
+
+  #egg
+- type: entity
+  id: CrateContainerEgg
+  parent: CrateFreezer
+  name: egg freezer
+  description: Contains 10 cartons of eggs
+  components:
+  - type: StorageFill
+    contents:
+    - id: FoodContainerEgg
+      amount: 10
+      #butter
+- type: entity
+  id: CrateButter
+  parent: CrateFreezer
+  name: butter freezer
+  description: Contains 20 stick of butter
+  components:
+  - type: StorageFill
+    contents:
+    - id: FoodButter
+      amount: 20
+    #cheese
+- type: entity
+  id: CrateCheese
+  parent: CrateFreezer
+  name: cheese freezer
+  description: Contains 15 wheels of cheese
+  components:
+  - type: StorageFill
+    contents:
+    - id: FoodCheese
+      amount: 15

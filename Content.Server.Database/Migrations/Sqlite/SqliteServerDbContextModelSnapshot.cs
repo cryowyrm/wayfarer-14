@@ -716,6 +716,102 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.ToTable("job", (string)null);
                 });
 
+            modelBuilder.Entity("Content.Server.Database.NFLibraryBook", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("nf_library_book_id");
+
+                    b.Property<string>("Author")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("TEXT")
+                        .HasColumnName("author");
+
+                    b.Property<Guid>("AuthorPlayerUserId")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("author_player_user_id");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasMaxLength(32768)
+                        .HasColumnType("TEXT")
+                        .HasColumnName("content");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("date");
+
+                    b.Property<bool>("IsNSFW")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("is_nsf_w");
+
+                    b.Property<bool>("IsPublished")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("is_published");
+
+                    b.Property<int>("RoundId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("round_id");
+
+                    b.Property<int>("ServerId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("server_id");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("TEXT")
+                        .HasColumnName("title");
+
+                    b.Property<string>("Warnings")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("warnings");
+
+                    b.HasKey("Id")
+                        .HasName("PK_nf_library_book");
+
+                    b.HasIndex("RoundId")
+                        .HasDatabaseName("IX_nf_library_book_round_id");
+
+                    b.HasIndex("ServerId")
+                        .HasDatabaseName("IX_nf_library_book_server_id");
+
+                    b.ToTable("nf_library_book", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.JobAlternateTitle", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("job_alternate_title_id");
+
+                    b.Property<string>("AlternateTitle")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("alternate_title");
+
+                    b.Property<string>("JobName")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("job_name");
+
+                    b.Property<int>("ProfileId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("profile_id");
+
+                    b.HasKey("Id")
+                        .HasName("PK_job_alternate_title");
+
+                    b.HasIndex("ProfileId", "JobName")
+                        .IsUnique();
+
+                    b.ToTable("job_alternate_title", (string)null);
+                });
+
             modelBuilder.Entity("Content.Server.Database.PlayTime", b =>
                 {
                     b.Property<int>("Id")
@@ -2238,6 +2334,39 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Navigation("Profile");
                 });
 
+            modelBuilder.Entity("Content.Server.Database.NFLibraryBook", b =>
+                {
+                    b.HasOne("Content.Server.Database.Round", "Round")
+                        .WithMany()
+                        .HasForeignKey("RoundId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_nf_library_book_round_round_id");
+
+                    b.HasOne("Content.Server.Database.Server", "Server")
+                        .WithMany()
+                        .HasForeignKey("ServerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_nf_library_book_server_server_id");
+
+                    b.Navigation("Round");
+
+                    b.Navigation("Server");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.JobAlternateTitle", b =>
+                {
+                    b.HasOne("Content.Server.Database.Profile", "Profile")
+                        .WithMany("JobAlternateTitles")
+                        .HasForeignKey("ProfileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_job_alternate_title_profile_profile_id");
+
+                    b.Navigation("Profile");
+                });
+
             modelBuilder.Entity("Content.Server.Database.Player", b =>
                 {
                     b.OwnsOne("Content.Server.Database.TypedHwid", "LastSeenHWId", b1 =>
@@ -2685,6 +2814,8 @@ namespace Content.Server.Database.Migrations.Sqlite
             modelBuilder.Entity("Content.Server.Database.Profile", b =>
                 {
                     b.Navigation("Antags");
+
+                    b.Navigation("JobAlternateTitles");
 
                     b.Navigation("Jobs");
 

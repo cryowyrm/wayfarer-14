@@ -9,7 +9,7 @@
   whitelisted: true # Wayfarer: false<true # WHITELIST REQUIREMENTS: BUILD A FUNCTIONAL TESLA, TEG OR NUCLEAR REACTOR
   startingGear: PlantManagerGear
   alwaysUseSpawner: true
-  icon: "JobIconPlantManager"
+  icon: "JobIconChiefEngineer" # Wayfarer: PlantManager<ChiefEngineer
   requireAdminNotify: true
   supervisors: job-supervisors-centcom
   weight: 160
@@ -26,6 +26,11 @@
   - !type:GiveItemOnHolidaySpecial
     holiday: FrontierBirthday
     prototype: FrontierBirthdayGift
+  # Wayfarer: Spooky month!
+  - !type:GiveItemOnHolidaySpecial
+    holiday: Halloween
+    prototype: TreatBagRandomTreat
+  # End Wayfarer
 
 - type: startingGear
   id: PlantManagerGear

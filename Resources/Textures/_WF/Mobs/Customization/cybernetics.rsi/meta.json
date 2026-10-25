@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-4.0",
+  "copyright": "Created by Feathernights on Discord for Wayfarer",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "kit-mask",
+      "directions": 4
+    },
+    {
+      "name": "armet",
+      "directions": 4
+    },
+    {
+      "name": "hawk",
+      "directions": 4
+    },
+    {
+      "name": "maw",
+      "directions": 4
+    },
+    {
+      "name": "twoeyes",
+      "directions": 4
+    },
+    {
+      "name": "foureyes",
+      "directions": 4
+    },
+    {
+      "name": "sixeyes",
+      "directions": 4
+    },
+    {
+      "name": "cyclops",
+      "directions": 4
+    },
+    {
+      "name": "hardpoint-a",
+      "directions": 4
+    },
+    {
+      "name": "hardpoint-b",
+      "directions": 4
+    }
+  ]
+}

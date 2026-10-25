@@ -2,6 +2,19 @@
   id: ShipyardExpedition
   name: guide-entry-shipyard-expedition
   text: "/ServerInfo/_NF/Guidebook/ShipyardExpedition.xml"
+  children:
+  - ShipyardAegis
+  - ShipyardAnchor
+  - ShipyardBrigand
+  - ShipyardCharon
+  - ShipyardDove
+  - ShipyardDragonfly
+  - ShipyardPathfinder
+
+  # Wayfarer Ships
+  - ShipyardBehir
+  - ShipyardKobold
+  - ShipyardScryer
 
 - type: guideEntry
   id: ShipyardAegis
@@ -12,12 +25,12 @@
   id: ShipyardAnchor
   name: guide-entry-shipyard-anchor
   text: "/ServerInfo/_NF/Guidebook/Shipyard/Anchor.xml"
-  
+
 - type: guideEntry
   id: ShipyardBrigand
   name: guide-entry-shipyard-brigand
   text: "/ServerInfo/_NF/Guidebook/Shipyard/Brigand.xml"
-  
+
 - type: guideEntry
   id: ShipyardCharon
   name: guide-entry-shipyard-charon
@@ -33,7 +46,7 @@
   name: guide-entry-shipyard-dragonfly
   text: "/ServerInfo/_NF/Guidebook/Shipyard/Dragonfly.xml"
 
-  
+
 - type: guideEntry
   id: ShipyardPathfinder
   name: guide-entry-shipyard-pathfinder

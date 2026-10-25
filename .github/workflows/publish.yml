@@ -65,3 +65,8 @@ jobs:
       run: Tools/actions_changelog_rss.py
       env:
         CHANGELOG_RSS_KEY: ${{ secrets.CHANGELOG_RSS_KEY }}
+
+  publish_changelog:
+    needs: build
+    uses: ./.github/workflows/publish-changelog.yml
+    secrets: inherit

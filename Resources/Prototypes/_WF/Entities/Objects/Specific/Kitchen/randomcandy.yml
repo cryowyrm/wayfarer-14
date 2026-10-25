@@ -1,0 +1,124 @@
+- type: weightedRandomFillSolution
+  id: RandomFillCandy
+  fills:
+  # 5 groups for a total weight of 100
+  # Crack - weight: 10
+  - quantity: 15
+    weight: 5
+    reagents:
+    - Stimulants
+  - quantity: 10
+    weight: 5
+    reagents:
+    - Ichor
+  # Medicinal Candy - weight: 20
+  - quantity: 20
+    weight: 20
+    reagents:
+    - Desoxyephedrine
+    - Ephedrine
+    - Tricordrazine
+    - Vitamin
+    - PolypyryliumOligomers
+    - Charcoal
+  # Drug Candy - weight: 25
+  - quantity: 20
+    weight: 20
+    reagents:
+    - SodiumPolyacrylate
+    - SpaceDrugs
+    - Laughter
+    - JuiceThatMakesYouWeh
+    - Lipozine
+    - Carpetium
+    - Bananadine
+    - THC
+    - MindbreakerToxin
+  - quantity: 5
+    weight: 5
+    reagents:
+    - Honk
+  # Common - weight: 40
+  - quantity: 20
+    weight: 20
+    reagents:
+    - Sugar
+  - quantity: 10
+    weight: 20
+    reagents:
+    - Caffeine
+  # Bad Candy - weight: 15
+  - quantity: 20
+    weight: 2.5
+    reagents:
+    - Nocturine
+  - quantity: 10
+    weight: 10
+    reagents:
+    - Razorium
+  - quantity: 5
+    weight: 2.5
+    reagents:
+    - Lexorin
+    - Bleach
+    - Lead
+
+- type: entity
+  name: mystery candy
+  parent: [ BaseItem, RecyclableItemNoMats ]
+  id: CandyMystery
+  description: Halloween's spirit and mystery, all contained inside this wrapped candy! I wonder what flavor this is?
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+  - type: RandomFillSolution
+    solution: food
+    weightedRandomId: RandomFillCandy
+  - type: Item
+    size: Tiny
+    sprite: _WF/Objects/Consumable/Food/mysterycandy.rsi
+  - type: Sprite
+    sprite: _WF/Objects/Consumable/Food/mysterycandy.rsi
+    layers:
+    - state: candy1
+      map: [ "RandomCandy" ]
+  - type: RandomSprite
+    available:
+      - RandomCandy:
+          candy1: ""
+          candy2: ""
+          candy3: ""
+          candy4: ""
+  - type: Edible
+    delay: 0.6
+    forceFeedDelay: 2
+    transferAmount: null
+    edible: Pill
+  - type: BadFood
+  - type: FlavorProfile
+    ignoreReagents: [ ]
+  - type: ExplosionResistance
+    damageCoefficient: 0.025 # survives conventional explosives but not minibombs and nukes
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:SpillBehavior
+        solution: food
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: SolutionSpiker
+    sourceSolution: food
+  - type: Extractable
+    grindableSolutionName: food
+  - type: StaticPrice
+    price: 0
+  - type: Tag
+    tags:
+    - Pill
