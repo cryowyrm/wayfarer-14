@@ -38,13 +38,13 @@
   name: sparklevulp plushie
   description: Seems to be covered in glitter and always smiling! You feel like you should run "fixrotations" and delete your invalids.
   -type: Sprite
-  sprite: _WF/Objects/Fun/Plushies/maeshmallow.rsi
+  sprite: _WF/Objects/Fun/Plushies/mauve.rsi
   state: MauvePlushie
   -type: Item
-  sprite: _WF/Objects/Fun/Plushies/maeshmallow.rsi
+  sprite: _WF/Objects/Fun/Plushies/mauve.rsi
   -type: Clothing
   quickEquip: false
-  sprite: _WF/Objects/Fun/Plushies/maeshmallow.rsi
+  sprite: _WF/Objects/Fun/Plushies/mauve.rsi
   slots:
     - HEAD
 
